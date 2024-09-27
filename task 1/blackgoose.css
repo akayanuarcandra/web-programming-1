@@ -1,0 +1,42 @@
+body {
+background-color: #faf2e4;
+font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 5px solid gold;
+    margin-top: 30px;
+    font-size: 60px;
+    color: gold;
+}
+h2 {
+color: #d1633c;
+font-size: 40px;
+}
+.header {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #784421;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #784421;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
