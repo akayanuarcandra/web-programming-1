@@ -17,29 +17,34 @@
 <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
 
 <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
-Your Information
+<fieldset>
+  <legend>Your Information</legend>
 <ul>
-  <li>Name: <input type="text" name="customername"></li>
-  <li>Address: <input type="text" name="address"></li>
-  <li>Telephone Number: <input type="text" name="telephone"></li>
-  <li>Email: <input type="text" name="email"></li>
-  <li>Delivery instructions: <br> <textarea name="instructions" cols="60" rows="4" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+  <li><label for="form-name">Name: </label><input type="text" name="customername"></li>
+  <li><label for="form-address">Address: </label><input type="text" name="address"></li>
+  <li><label for="form-telephone">Telephone Number: </label><input type="text" name="telephone"></li>
+  <li><label for="form-email">Email: </label><input type="text" name="email"></li>
+  <li><label for="form-delivery">Delivery instructions: </label><br> <textarea name="instructions" cols="60" rows="4" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
 </ul>
+</fieldset>
 
 
 <h2>Design Your Dream Pizza:</h2>
 
-<p>Pizza specs<p>
+<fieldset>
+<legend>Pizza specs</legend>
 
-<p>Crust <em>(Choose one)</em>:</p>
+  <fieldset>
+<legend>Crust <em>(Choose one)</em>:</legend>
 <ul>
-    <li><input type="radio" name="crust" value="white">Classic white</li>
-    <li><input type="radio" name="crust" value="grain">Multigrain</li>
-    <li><input type="radio" name="crust" value="cheese">Cheese-stuffed crust</li>
-    <li><input type="radio" name="crust" value="gluten">Gluten-free</li>
+    <li><label><input type="radio" name="crust" value="white">Classic white</label></li>
+    <li><label><input type="radio" name="crust" value="grain">Multigrain</label></li>
+    <li><label><input type="radio" name="crust" value="cheese">Cheese-stuffed crust</label></li>
+    <li><label><input type="radio" name="crust" value="gluten">Gluten-free</label></li>
 </ul>
-
-<p>Toppings <em>(Choose as many as you want)</em>:</p>
+  </fieldset>
+<fieldset>
+<legend>Toppings <em>(Choose as many as you want)</em>:</legend>
 <ul>
   <li><input type="checkbox" name="toppings[]" value="red" checked>Red sauce</li>
   <li><input type="checkbox" name="toppings[]" value="white">White sauce</li>
@@ -49,8 +54,9 @@ Your Information
   <li><input type="checkbox" name="toppings[]" value="peppers">Peppers</li>
   <li><input type="checkbox" name="toppings[]" value="anchovies">Anchovies</li>
 </ul>
-
-<p>Number</p>
+</fieldset>
+<fieldset>
+<legend>Number</legend>
 <p>How many pizzas:
   <select name="pizzas" size="1">
     <option value="1">1</option>
@@ -61,6 +67,8 @@ Your Information
     <option value="6">6</option>
   </select>
 </p>
+</fieldset>
+</fieldset>
   <br>
   <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
 </form>
