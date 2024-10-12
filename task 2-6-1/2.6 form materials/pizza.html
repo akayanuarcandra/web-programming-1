@@ -1,13 +1,20 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" >
-   <title>Blackstone Bistro: Pizza-on-Demand</title>
-   <style type="text/css">
-      ol, ul { 
-     list-style-type: none;
-      }
-   </style>
+    <meta charset="utf-8">
+    <title>Blackstone Bistro: Pizza-on-Demand</title>
+    <style type="text/css">
+        ol, ul {
+            list-style-type: none;
+        }
+        #imagePreview {
+            max-width: 100%;
+            max-height: 400px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,61 +23,78 @@
 
 <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
 
-<form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
-<fieldset>
-  <legend>Your Information</legend>
-    <ul>
-        <li><label for="customername">Name: </label><input type="text" id="customername" name="customername"></li>
-        <li><label for="address">Address: </label><input type="text" id="address" name="address"></li>
-        <li><label for="telephone">Telephone Number: </label><input type="text" id="telephone" name="telephone"></li>
-        <li><label for="email">Email: </label><input type="text" id="email" name="email"></li>
-        <li><label for="instructions">Delivery instructions: </label><br> <textarea id="instructions" name="instructions" cols="60" rows="4" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
-    </ul>
-</fieldset>
+<form action="http://www.blackgoosebistro.com/pizza.php" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Your Information</legend>
+        <ul>
+            <li><label for="customername">Name: </label><input type="text" id="customername" name="customername"></li>
+            <li><label for="address">Address: </label><input type="text" id="address" name="address"></li>
+            <li><label for="telephone">Telephone Number: </label><input type="text" id="telephone" name="telephone"></li>
+            <li><label for="email">Email: </label><input type="text" id="email" name="email"></li>
+            <li><label for="instructions">Delivery instructions: </label><br> <textarea id="instructions" name="instructions" cols="60" rows="4" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+        </ul>
+    </fieldset>
 
+    <h2>Design Your Dream Pizza:</h2>
 
-<h2>Design Your Dream Pizza:</h2>
+    <fieldset>
+        <legend>Pizza specs</legend>
 
-<fieldset>
-<legend>Pizza specs</legend>
-
-  <fieldset>
-<legend>Crust <em>(Choose one)</em>:</legend>
-<ul>
-    <li><label><input type="radio" name="crust" value="white" checked>Classic white</label></li>
-    <li><label><input type="radio" name="crust" value="grain">Multigrain</label></li>
-    <li><label><input type="radio" name="crust" value="cheese">Cheese-stuffed crust</label></li>
-    <li><label><input type="radio" name="crust" value="gluten">Gluten-free</label></li>
-</ul>
-  </fieldset>
-<fieldset>
-<legend>Toppings <em>(Choose as many as you want)</em>:</legend>
-<ul>
-  <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked>Red sauce</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="white">White sauce</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="mozarella">Mozzarella Cheese</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="peppers">Peppers</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="anchovies">Anchovies</label></li>
-</ul>
-</fieldset>
-<fieldset>
-<legend>Number</legend>
-<p>How many pizzas:
-  <select name="pizzas" size="1">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-  </select>
-</p>
-</fieldset>
-</fieldset>
-  <br>
-  <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
+        <fieldset>
+            <legend>Crust <em>(Choose one)</em>:</legend>
+            <ul>
+                <li><label><input type="radio" name="crust" value="white" checked>Classic white</label></li>
+                <li><label><input type="radio" name="crust" value="grain">Multigrain</label></li>
+                <li><label><input type="radio" name="crust" value="cheese">Cheese-stuffed crust</label></li>
+                <li><label><input type="radio" name="crust" value="gluten">Gluten-free</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Toppings <em>(Choose as many as you want)</em>:</legend>
+            <ul>
+                <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked>Red sauce</label></li>
+                <li><label><input type="checkbox" name="toppings[]" value="white">White sauce</label></li>
+                <li><label><input type="checkbox" name="toppings[]" value="mozarella">Mozzarella Cheese</label></li>
+                <li><label><input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni</label></li>
+                <li><label><input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms</label></li>
+                <li><label><input type="checkbox" name="toppings[]" value="peppers">Peppers</label></li>
+                <li><label><input type="checkbox" name="toppings[]" value="anchovies">Anchovies</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Number</legend>
+            <p>How many pizzas:
+                <select name="pizzas" size="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Image</legend>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            <img id="imagePreview" src="#" alt="Image preview" />
+        </fieldset>
+    </fieldset>
+    <br>
+    <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
 </form>
+
+<script>
+    document.getElementById("imageUpload").onchange = function() {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var preview = document.getElementById("imagePreview");
+            preview.src = e.target.result;
+            preview.style.display = "block";
+        };
+        reader.readAsDataURL(this.files[0]);
+    };
+</script>
+
 </body>
 </html>
