@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>form</title>
+   <meta charset="utf-8" />
+
+</head>
+<body>
+<h1> Regester form</h1>
+<fieldset>
+<legend>Basic information</legend>
+<form name="register" action="act.php" enctype="multipart/form-data" method="POST">
+<label>name: <input type="text" name="username" size="20" maxlength="10"> <br></label>
+<label>password:<input type="password" name="password" ></label><br>
+<label>Email:<input type="email" name="email"></label><br>
+<p><label for="resume">Your resume</label></P>
+<p><textarea name="resume" id="resume"rows="6" cols="30">input your resume</textarea></p>
+<p>Your gender</p>
+<input type="radio" name="gender" id="male" value="male" checked><label for="male">male</label>
+<input type="radio" name="gender" id="female"value="female"><label for="female">female</label><br>
+<p><label>Birthday:<input type="date" name="birthday" value="2000-05-21"></label></P>
+<p><label>Lunch time:<input type="time" name="lunchtime" value="11:30:00"></label></P>
+</fieldset>
+<fieldset>
+<legend>Your favorite things</legend>
+<p><label for="color">What's your favorite color</label>
+<input type="color" name="mycolor" id="color"></p>
+
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+
+</form> 
+
+
+</body>
+</html>
