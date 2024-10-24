@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> User action pseudo-classes</title>
+<meta charset="utf-8">
+<style>
+input:focus { background-color: yellow; }
+a:hover {
+color: maroon;
+background-color: #ffd9d9;
+}
+h1::before {
+content: url(smiley.png);
+}
+h1::after { 
+content: url(smiley.png);
+}
+p::selection {  
+   background: red;  
+   color: #fff;  
+ }  
+ /*
+ p::-moz-selection {  
+   background: red;  
+   color: #fff;  
+ } 
+*/ 
+</style>
+</head>
+<body>
+<h1>User action pseudo-classes</h1>
+<p>A measurement of colors based on the number of bits alloted by the file or system. A measurement of colors based on the number of bits alloted by the file or system. A measurement of colors based on the number of bits alloted by the file or system</p>
+<form action="action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit"><input type="reset" value="Reset">
+</form>
+<h1>Glossary</h1>
+
+<p><a href="#startA">A</a> |<a href="#startB"> B</a> | <a href="#startC">C </a></p>
+
+<h2 id="startA">A</h2>
+
+<dl>
+
+<dt>aliasing</dt>
+<dd>The jagged stair-stepped edges that can appear between colors in a bitmapped graphic.</dd>
+
+<dt>anchor</dt>
+<dd>The HTML element responsible for making hyperlinks.</dd>
+
+<dt>applet</dt>
+<dd>A self-contained, mini-executable program, such as one written in the Java programming language.</dd>
+
+<dt>attribute</dt>
+<dd>Parameters that extend or modify an HTML element</dd>
+
+</dl>
+
+<h2 id="startB">B</h2>
+
+<dl>
+<dt>backend</dt>
+<dd>Aspects of a web site that pertain to functions that take place on the server</dd>
+
+<dt>bit depth</dt>
+<dd>A measurement of colors based on the number of bits alloted by the file or system</dd>
+
+<dt>browser</dt>
+<dd>The client software that requests and displays web pages.</dd>
+</dl>
+
+<h2 id="startC">C</h2>
+
+<dl>
+<dt>cache</dt>
+<dd>Temporary storage area that browsers use for downloaded documents</dd>
+
+<dt>CGI</dt>
+<dd>Common Gateway Interface, a mechanism for communication between the web server and other programs running on the server</dd>
+
+<dt>codec</dt>
+<dd>An algorithm used by media files for compressing and decompressing data</dd>
+
+<dt>compression</dt>
+<dd>A method for reducing the file size of a document. Different file formats use different compression techniques</dd>
+</dl>
+	
+</form>
+</body>
+</html>
