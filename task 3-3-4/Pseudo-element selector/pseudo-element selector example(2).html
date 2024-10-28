@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>pseudo-element selector example(2)</title>
+   <meta charset="utf-8" />
+
+<style>
+p.warning::before {
+content: url(exclamation.png);
+margin-right: 6px;
+}
+p.warning::after {
+content: " Thank you.";
+color: red;
+}
+
+</style>
+</head>
+<body>
+
+<p class="warning">We are required to warn you that undercooked food is a health risk.</p>
+
+
+</body>
+</html>
