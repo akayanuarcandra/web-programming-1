@@ -5,11 +5,12 @@ body {
     margin: 0 15% 0;
     /*background-image: url("images/bullseye.png");*/
     background:
-            #d2dc9d
             url("images/blackgoose.png")
             no-repeat
             fixed
-            center 100px;
+            center 100px,
+            url("images/gooseshadow.png") 10% top no-repeat,
+            #d2dc9d;
 }
 
 header {
@@ -19,8 +20,7 @@ header {
     background:
             url("images/purpledot.png") left top repeat-y,
             url("images/purpledot.png") right top repeat-y,
-            url("images/gooseshadow.png") 90% bottom no-repeat;
-    background-color: rgba(255,255,255,.5);
+            #ffffff50;
 }
 
 a {
