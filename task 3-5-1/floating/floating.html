@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>floating</title>
+   <meta charset="utf-8" />
+<style>
+body {
+   /*background-color:FDFFFF;*/
+   background-color: ;
+}
+
+p {
+	padding: 15px;
+	background-color: #FFF799;
+	border: 2px solid #6C4788;
+}
+
+span.notice {
+	margin: 10px;
+	width: 100px;
+	color: #FFF;
+	background-color: #9D080D;
+	padding: 4px;
+   float: right;
+	}
+
+img {
+    float: right;
+    margin: 10px;
+    }
+
+p#float {
+  float: left;
+   width: 200px;
+   margin-top: 0;
+   background: #A5D3DE;
+}
+
+p.float {
+   float: left;
+   width: 200px;
+   margin-top: 0;
+   background: #ccc;
+}
+
+p {
+   border: 1px solid red;
+}
+
+p#p6 {
+   clear: both;
+}
+
+</style>
+</head>
+<body>
+<ul>
+<li><a href="#">Serif</a></li>
+<li><a href="#">Sans-serif</a></li>
+<li><a href="#">Script</a></li>
+<li><a href="#">Display</a></li>
+<li><a href="#">Dingbats</a></li>
+</ul>
+<p id="s1"><img src="images/crown.gif" alt="">Objects in the normal flow affect the layout of the objects around them. This
+is the behavior you’ve come to expect in web pages—elements don’t overlap or bunch up. They make room for one another.
+We’ve seen all of this before, but in this chapter we’ll be paying attention to whether elements are in the flow or removed from the flow. Floating and
+positioning change the relationship of elements to the normal flow in different ways. Let’s first look at the special behavior of floated elements (or
+“floats” for short).Simply stated, the float property moves an element as far as possible to the left or right, allowing the following content to wrap around it. It is not
+a positioning scheme per se, but a unique feature built into CSS with some interesting behaviors. Floats are one of the primary tools of modern CSSbased
+web design, used to create multicolumn layouts, navigation toolbars from lists, and table-like alignment without tables. Let’s start with the float
+property itself.I will certainly point out when a property is known to cause fussybrowser behavior. By the time you are
+reading this, the offending browsers may already be off the radar. The best way to explain floating is to demonstrate it. In this example, the
+float property is applied to an img element to float it to the right. The best advice I can give you is to test your
+designs on as many browsers and devices as you can get your hands on and fix things that appear to be broken. Web searches for particular
+properties or browsers plus “bugs” usually turn up posts by developers having similar problems or offering potential workarounds. You can also
+check the CSS-discuss Wiki</p>
+<p id="float"> Let’s look at what happens when you float a block within the normal flow.</p>
+<p id="clear"> <span class="notice">Notice:Always provide a width for floated text elements.Floated inline elements behave as block elements.</span> 
+Those are the basics…let’s look at more examples and explore additional floating behaviors. Before style sheets, the only thing you could float was an
+image by using the obsolete align attribute. With CSS, it is possible to float any HTML element, both inline and block-level, as we’ll see in the following
+examples.Floating inline and block elements First, you’ll notice that the style rule that floats the span includes the width property. In fact, it is necessary to specify a width for floated text
+elements because without one, the content area of the box expands to its widest possible width (or, on some browsers, it may collapse to its
+narrowest possible width). Images have an inherent width, so we didn’t need to specify a width in the previous example (although we certainly
+could have).Notice that the margin is held on all four sides of the floated span text,even though top and bottom margins are usually not rendered on inline
+elements (see Figure 14-18 in the previous chapter). That is because all floated elements behave like block elements. Once you float an inline
+element, it follows the display rules for block-level elements, and margins are rendered on all four sides.</P>
+
+<p>P1</p>
+<p class="float">P2</p>
+<p class="float">P3</p>
+<p class="float">P4</p>
+<p class="float">P5</p>
+<p id="p6">P6</p>
+<p>P7</p>
+<p>P8</p>
+<p>P9</p>
+<p>P10</p>
+
+</body>
+</html>
