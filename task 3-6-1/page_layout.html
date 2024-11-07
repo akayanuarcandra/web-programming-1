@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+   <title>page layout</title>
+   <meta charset="utf-8" />
+   <style>
+      /*Fixed layout */
+
+      /*#wrapper {*/
+      /*   width: 750px;*/
+      /*   position: relative;*/
+      /*   margin-left: auto;*/
+      /*   margin-right: auto;*/
+      /*   outline:1px solid black;*/
+      /*   padding: 0px;*/
+      /*}*/
+      /*#extras {*/
+      /*   position: absolute;*/
+      /*   top: 0px;*/
+      /*   left: 0px;*/
+      /*   width: 200px;*/
+      /*   background: orange; }*/
+      /*#main {*/
+      /*   margin-left: 205px;*/
+      /*   background-color: yellow;*/
+      /*   outline:2px dashed black;*/
+      /*}*/
+
+      /* Fluid layout */
+      /*div#main {*/
+      /*    width: 44%;*/
+      /*    margin-right: 1%;*/
+      /*    float: left;*/
+      /*    background: yellow;*/
+      /*}*/
+      /*div#extras {*/
+      /*    width: 55%;*/
+      /*    float: left;*/
+      /*    background: orange;*/
+      /*}*/
+
+      /* Hybrid layout */
+      div#main {
+         width: auto;
+         position: absolute;
+         top: 0;
+         left: 220px;
+         background: yellow;
+      }
+      div#extras {
+         width: 220px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: orange;
+      }
+   </style>
+</head>
+<body>
+<div id="wrapper">
+   <div id="main">
+      <h1>Main Column</h1>
+      <p>Now that you understand the principles of moving elements around on the page using CSS floats and positioning, we can put these tools to use in some
+         standard page layouts. This chapter looks at the various approaches to CSSdriven web design and provides some simple templates that will get you on
+         your way to building basic two- and three-column web pages.</P>
+      <p>Before we get started, it must be said that there are seemingly endless variations on creating multicolumn layouts with CSS. This chapter is intended
+         to be a “starter kit.” The templates presented here are simplified and may not work for every situation, although I’ve tried to point out the relevant
+         shortcomings of each.</p>
+      <p>Before we start dissecting CSS layouts, let’s talk about the various options for structuring a web page. As you know, web pages appear on browsers of
+         all sizes, from tiny phone screens to cinema displays. In addition, users can resize their text, which has an impact on the layout of the page. Over time,
+         several standard page layout approaches have emerged that address these issues in various ways:</P>
+      <p>When you design a page to be a specific width, you need to decide a couple of things. First, you need to pick the width, usually based on common monitor
+         resolutions. As of this writing, most sites are designed to be 960 pixels wide or thereabouts to fit nicely in the most common 1024 × 768 monitor
+         resolution. Some designers keep their layouts narrower; some venture even larger as monitor resolution increases. Either way, it is a design decision.</P>
+      <p>You also need to decide where the fixed-width layout should be positioned
+         in the browser window. By default, it stays on the left edge of the browser,
+         with the extra space to the right of it. You can also center the page, splitting
+         the extra space over left and right margins, which may make the page look
+         as though it better fills the browser window. Figure 16-1 shows two fixedwidth
+         layouts, positioned differently in the browser window.</P>
+      <p>Fixed layouts stay put at a specific pixel width regardless of the size of the browser window or text size.</P>
+      <p>Fluid (or liquid) layouts resize proportionally when the browser windowresizes.</P>
+      <p>Elastic layouts resize proportionally based on the size of the text.</P>
+      <p>Hybrid layouts combine fixed and scalable areas.</P>
+   </div>
+   <div id="extras">
+      <h1>extras column</h1>
+      <p>Fixed layouts, as the name implies, are created at a specific pixel width as determined by the designer. Akin to print, they allow the designer to control
+         the relationship of page elements, alignment, and line lengths (see the sidebar Optimal Line Length).</P>
+      <p>This layout approach became popular due to the fact that folks have traditionally viewed the Web primarily on desktop
+         monitors with ample real estate, and web designers were keen on reproducing designs that looked exactly the same on every screen.</P>
+      <p>But as you know, times are a’changin’, and we no longer make those assumptions or strive for pixel perfection.</P>
+
+   </div>
+</div>
+
+</body>
+</html>

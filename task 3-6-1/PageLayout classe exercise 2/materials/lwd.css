@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #373737;
+  font-size: 76%;
+  line-height: 1.5;
+  background: url(images/stripes.gif) top repeat-x;
+  margin-bottom: 30px;
+  }
+  
+h1 {
+  background: url(images/lwd.png) top left no-repeat;
+  width: 490px;
+  height: 139px;
+  text-indent: -999em;
+  font-size: 11px;
+  margin-bottom: 2em;
+  }
+  
+#container {
+  width: 850px;
+  /* write container margin layout declarations below */
+  margin:50px auto auto auto;
+  }
+
+#main {
+  width: 585px;
+  /* write main layout declarations below */
+
+  }
+  
+#side {
+/* write side layout declarations below */
+
+  }
+
+#copyright {
+  clear: both;
+  margin-top: 3em;
+  color: #999999;
+  font-size: 90%;
+  }
+
+a:link {
+  color: #390;
+  }
+
+a:visited {
+  color:#669900;
+  }
+
+#main h2 {
+  color: #390;
+  font-size: 1em;
+  border-top: 1px solid #390;
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  padding-top: .5em;
+  }  
+
+.name, .page {
+  font-weight: bold;
+  }
+
+#resources {
+  background: url(images/resources_top.png) top left no-repeat;
+  width: 226px;
+  padding-top: 10px;
+  margin-top: 2em;  }
+  
+#resources h2 {
+  color: #FF6000;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  margin: 10px;
+  }
+
+#resources #bottom {
+  background: url(images/resources_bottom.png) bottom left no-repeat;
+  width: 226px;
+  height: 30px;
+  margin-top: -1px;
+}
+
+#resources a:link {
+  color: #FF6000;
+  }
+  
+#resources a:visited {
+  color: #ff843a;
+  }
+
+dl {
+  margin: 0 10px;
+  }
+
+dt {
+  font-weight: bold;
+  margin-top: 1em;
+  }
+
+dd {
+  margin: 0;
+  padding: 0;
+  }
+
+#resources ul {
+  list-style-type: none;
+  padding-left: 1em;
+
+  }
+
+#side #details {
+  font-size: .9em;
+  color: #666;
+  text-align: right;
+  line-height: 1.2em;
+  }
+
+#details img {
+  margin-bottom: 10px;
+  }
+
+/* --------------- SECOND PAGE STYLES ------------------ */
+
+
+#second h1 {
+  background: url(images/lwd_2nd.png) top left no-repeat;
+  width: 425px;
+  height: 57px;
+  text-indent: -999em;
+  font-size: 11px;
+  margin-bottom: 1em;
+  }
+
+p#back {
+  margin-top: 1em;
+  }
+
+#second #main h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 1.75em;
+  font-weight: normal;
+  margin-top: 2em;
+  color: #373737;
+  }
+
+#second h3 {
+  font-size: 1.3em;
+  color: #390;
+  border-bottom: 1px solid #390;
+  margin-top: 2em;
+  }
+
+#second h4 {
+  margin-bottom: 0;
+  }
+
+#second ul {
+  list-style-type: none;
+  padding-left: 2em;
+  margin-top: 0;
+  }
+
+/* ------------ PAGE-SPECIFIC STYLES ---------------- */
+
+#linkslist ul li, #materials ul li {
+  margin-top: 4px;
+  }
+  
+#linkslist a:link, #linkslist a:visited {
+  color: #360;
+  text-decoration: none;
+  }
+
+#linkslist a:hover {
+  color: #390;
+  border-bottom: 1px dotted #360;
+  }
+  
+#books a:link, #books a:visited {
+  text-decoration: none;
+   border-bottom: 1px dotted #333;
+  color: #333;
+  }
+
+#books a:hover {
+  color: #390;
+  border-bottom: 1px dotted #360;
+  }
+  
+#books ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: .5em 0 2em 0;
+  }
+ 
+#books ul li, #articles ul li, #updates ul li {
+   margin-top: 1em;
+   }
+
+b.title {
+	color: #777;
+}
+   
+#materials ul {
+   margin-bottom: 3em;
+   }
+   
+.note {
+  font-style:italic;
+  color:#C33;
+  }
