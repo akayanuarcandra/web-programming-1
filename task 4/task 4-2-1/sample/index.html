@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>- 沈阳航空航天大学 - 国际教育学院（外事处）</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<SCRIPT language=javascript>
+function chkSubmit()
+{
+	if(form1.Keyword.value=="输入的搜索关键字")
+		{	
+			alert("输入的搜索关键字！") ;
+			form1.Keyword.focus();
+			return (false);
+		}
+		form1.submit();
+}
+</SCRIPT>
+
+<DIV id=header>
+<DIV class=w><A class=logo href="../index.asp">&nbsp;</A> 
+<DIV class=language>
+<A href="http://en.sau.edu.cn/index.asp">English</A> | <A href="http://kr.sau.edu.cn/">한국어</A></DIV>
+<DIV class=search>
+<form id="form1" name="form1" method="post" action="../other/search.asp">
+<INPUT class=button onClick="GoSearch('txtKeyword')" type=button><INPUT 
+onblur="txtFocus(this,'搜索')" id=txtKeyword class=text 
+onfocus="txtFocus(this,'搜索')" value=搜索 name=key>
+<SCRIPT type=text/javascript>
+    function txtFocus(key, value) {
+        if (key.value == value) {
+            key.value = "";
+        } else if (key.value == "") {
+            key.value = value;
+        }
+    }
+    function GoSearch(key) {
+        var txt = document.getElementById(key).value;
+        var url = "../other/search.asp";
+        if (txt != "" &&txt!="search") {
+            url += "?key=" + encodeURIComponent(txt);
+            window.location = url;
+        }
+        else {
+            return false;
+        }
+    }
+</SCRIPT>
+</form>
+ </DIV></DIV></DIV>
+ <!-- header end -->
+
+ <DIV id=navigator>
+<DIV class=w>
+<UL id=nav>
+  <LI><A title=首页 href="../index.asp" target=_self class=on>首页</A> </LI>
+  <LI><A title=关于我们 href="../about/index_1.asp?cataid=A01610006" target=_self >关于我们</A> 
+  <UL>
+    <LI><A href="../about/index_1.asp?cataid=A01610006" target=_self>部门简介</A> </LI>
+    <LI><A href="../about/leaders.asp?cataid=A016100070001" target=_self>机构设置</A> </LI>
+  </UL>
+  </LI>
+  <LI><A title= 交流合作 href="../cooperation/index_1.asp?cataid=A01840001" target=_self  >交流合作</A> 
+  <UL>
+    <LI><A href="../cooperation/index_1.asp?cataid=A01840001" target=_self>国际交流概况</A> </LI>
+    <LI><A href="../cooperation/index_1.asp?cataid=A018400020004" target=_self>校际合作</A> </LI>
+    <LI><A href="../cooperation/index_1.asp?cataid=A018400030003" target=_self>中外合作办学</A> </LI>
+  </UL>
+  </LI>
+  <LI><A title=留学生 href="../student/index_3.asp?cataid=A018500010005" target=_self >留学生</A> 
+  <UL>
+    <LI><A href="../student/index_3.asp?cataid=A018500010005" target=_self>政策法规</A></LI>
+    <LI><A href="../student/index_1.asp?cataid=A01850002" target=_self>招生信息</A></LI>
+    <LI><A href="../student/index_1.asp?cataid=A01850003" target=_self>收费标准</A></LI>
+    <LI><A href="../student/index_1.asp?cataid=A01850004" target=_self>奖学金</A></LI>
+    <LI><A href="../student/index_1.asp?cataid=A01850006" target=_self>汉语水平考试(HSK)</A></LI>
+    <LI><A href="../student/index_4.asp?cataid=A01850007" target=_self>学生风采</A></LI>
+    <LI><A href="../student/index_2.asp" target=_self>住宿环境</A></LI>
+    <LI><A href="../student/index_1.asp?cataid=A01850009" target=_self>常用下载</A> </LI>
+    </UL>
+    </LI>
+  <LI><A title=学生海外学习 href="../study/index_2.asp?cataid=A019500010001" target=_self >学生海外学习</A> 
+  <UL>
+    <LI><A href="../study/index_2.asp?cataid=A019500010001" target=_self>政策法规</A></LI>
+    <LI><A href="../study/index_1.asp?cataid=A019500020001" target=_self>交流项目</A></LI>
+    <LI><A href="../study/index_2.asp?cataid=A019500050001" target=_self>体会与感想</A></LI>
+    <LI><A href="../study/index_2.asp?cataid=A01950006" target=_self>常用信息</A></LI> 
+    <LI><A href="../study/index_1.asp?cataid=A01950007" target=_self>常用下载</A></LI>
+  </UL>
+  </LI>
+  <LI><A title=因公出国（境） href="../abroad/index_2.asp?cataid=A019600010001" target=_self >因公出国(境)</A> 
+  <UL>
+    <LI><A href="../abroad/index_2.asp?cataid=A019600010001" target=_self>政策法规</A></LI>
+    <LI><A href="../abroad/index_1.asp?cataid=A01960002" target=_self>签证指导</A></LI>
+    <LI><A href="../abroad/index_1.asp?cataid=A01960003" target=_self>教师风采</A></LI>
+    <LI><A href="../abroad/index_1.asp?cataid=A01960004" target=_self>常用下载</A></LI>
+  </UL>
+  </LI>
+  <LI><A title=外专外教 href="../expert/index_2.asp?cataid=A019700010001" target=_self >外专外教</A> 
+  <UL>
+    <LI><A href="../expert/index_2.asp?cataid=A019700010001" target=_self>政策法规</A></LI>
+    <LI><A href="../expert/index_2.asp?cataid=A019700020001" target=_self>外专外教聘请</A></LI>
+    <LI><A href="../expert/index_3.asp?cataid=A019700030001" target=_self>外专外教风采</A></LI>
+    <LI><A href="../expert/index_1.asp?cataid=A01970004" target=_self>引智项目</A></LI>
+    <LI><A href="../expert/index_1.asp?cataid=A01970005" target=_self>常用下载</A></LI>
+  </UL>
+  </LI>
+  <LI><A title=国际学术会议 href="../gjxshy/index_2.asp?cataid=A019800010001" target=_self >国际学术会议</A> 
+  <UL>
+    <LI><A href="../gjxshy/index_2.asp?cataid=A019800010001" target=_self>政策法规</A></LI>
+    <LI><A href="../gjxshy/index_1.asp?cataid=A01980002" target=_self>申请指南</A></LI>
+    <LI><A href="../gjxshy/index_2.asp?cataid=A019800030001" target=_self>会议信息</A></LI>
+    <LI><A href="../gjxshy/index_1.asp?cataid=A01980004" target=_self>常用下载</A></LI>
+  </UL>
+  </LI>
+  <LI><A title=港澳台侨生 href="../hkm/index_2.asp?cataid=A019900010002" target=_self >港澳台侨生</A>
+  <UL>
+    <LI><A href="../hkm/index_2.asp?cataid=A019900010002" target=_self>政策法规</A></LI>
+    <LI><A href="../hkm/index_2.asp?cataid=A01990002" target=_self>签注办理</A></LI>
+    <LI><A href="../hkm/index_2.asp?cataid=A01990003" target=_self>奖学金</A></LI>
+    <LI><A href="../hkm/index_3.asp?cataid=A01990004" target=_self>学生风采</A></LI>
+    <LI><A href="../hkm/index_1.asp?cataid=A01990005" target=_self>常用下载</A></LI>
+  </UL>
+  </LI>
+  <LI><A title=党群园地 href="../dqyd/index_2.asp?cataid=A02000001" target=_self >党群园地</A>
+  <UL>
+    <LI><A href="../dqyd/index_2.asp?cataid=A02000001" target=_self>党建动态</A></LI>
+    <LI><A href="../dqyd/index_1.asp?cataid=A02000002" target=_self>组织建设</A></LI>
+    <LI><A href="../dqyd/index_2.asp?cataid=A02000003" target=_self>学习园地</A></LI>
+    <LI><A href="../dqyd/index_3.asp?cataid=A02000004" target=_self>教工之家</A></LI>
+  </UL>
+  </LI></UL>
+</DIV></DIV>
+  <!-- navigator end -->
+<DIV id=slider>
+<DIV class=w>
+<DIV id=sliderBox class=slider-box><A class=prev href="javascript:;"></A>
+
+<DIV class=bd>
+<UL>
+
+  <LI><A href="javascript:;" target=_blank><IMG class=imgbox src="images/201564155124341.jpg" width=1120 height=400></A></LI>
+
+  <LI><A href="javascript:;" target=_blank><IMG class=imgbox src="images/20156415516489.jpg" width=1120 height=400></A></LI>
+
+  <LI><A href="javascript:;" target=_blank><IMG class=imgbox src="images/201564155050436.jpg" width=1120 height=400></A></LI>
+
+  <LI><A href="javascript:;" target=_blank><IMG class=imgbox src="images/201564155031632.jpg" width=1120 height=400></A></LI>
+
+  <LI><A href="javascript:;" target=_blank><IMG class=imgbox src="images/20156415505577.jpg" width=1120 height=400></A></LI>
+
+  <LI><A href="javascript:;" target=_blank><IMG class=imgbox src="images/201564154946829.jpg" width=1120 height=400></A></LI>
+
+</UL></DIV>
+ <A class=next href="javascript:;"></A></DIV><I>&nbsp;</I> </DIV></DIV>
+<!-- slider end -->
+<DIV id=content>
+<DIV class=w>
+<DIV class=grid>
+<DIV class=cols>
+<DIV class="mod mod-red">
+<DIV class=hd><A href="other/index_2.asp?cataid=A02010001">新闻速递<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;更多&gt;&gt;</SPAN></A></DIV>
+<DIV class=bd>
+<DIV class=alist><A href="other/index_2.asp?cataid=A02010001"><IMG class="imgbox mt15" src="images/01.jpg" width=353 height=100> </A>
+<UL>
+ 
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="美国塞基诺州立大学Roberts Fellows代表团访问我校"href="other/show.asp?D_id=950" target=_blank>美国塞基诺州立大学Roberts Fe..&nbsp;&nbsp;</A><SPAN>[2016-5-17]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="韩国世宗学堂财团理事长宋享根一行访问我校"href="other/show.asp?D_id=946" target=_blank>韩国世宗学堂财团理事长宋享根一行访问我校&nbsp;&nbsp;</A><SPAN>[2016-5-10]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="党委书记王维会见俄罗斯喀山国立研究技术大学校长阿尔伯特·吉利穆季诺夫一行"href="other/show.asp?D_id=940" target=_blank>党委书记王维会见俄罗斯喀山国立研究技术..&nbsp;&nbsp;</A><SPAN>[2016-4-27]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="我校召开2016年教育国际化工作会议"href="other/show.asp?D_id=939" target=_blank>我校召开2016年教育国际化工作会议&nbsp;&nbsp;</A><SPAN>[2016-4-22]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="我校两个项目入选2016年国家外国专家局“高端外国专家项目”"href="other/show.asp?D_id=933" target=_blank>我校两个项目入选2016年国家外国专家..&nbsp;&nbsp;</A><SPAN>[2016-4-15]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="澳大利亚南昆士兰大学副校长于泰瑞一行访问我校"href="other/show.asp?D_id=932" target=_blank>澳大利亚南昆士兰大学副校长于泰瑞一行访问我校&nbsp;&nbsp;</A><SPAN>[2016-4-13]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="常务副校长陈保东参加“中国澳大利亚周”国际教育专题活动并发表主题演讲"href="other/show.asp?D_id=931" target=_blank>常务副校长陈保东参加“中国澳大利亚周”..&nbsp;&nbsp;</A><SPAN>[2016-4-12]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="中国政府奖学金生“感知中国”活动工作会议"href="other/show.asp?D_id=929" target=_blank>中国政府奖学金生“感知中国”活动工作会议&nbsp;&nbsp;</A><SPAN>[2016-4-7]</SPAN></LI>
+  
+</UL></DIV></DIV></DIV></DIV>
+<!-- cols end -->
+<DIV class=cols>
+<DIV class="mod mod-red">
+<DIV class=hd><A href="other/index_2.asp?cataid=A02010002">最新公告<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;更多&gt;&gt;</SPAN></A></DIV>
+<DIV class=bd>
+<DIV class=alist><A href="other/index_2.asp?cataid=A02010002"><IMG class="imgbox mt15" src="images/02.jpg" width=353 height=100> </A>
+<UL>
+   
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="关于选派我校学生2016年秋季赴日本广岛工业大学交流学习的通知"href="other/show.asp?D_id=948" target=_blank>关于选派我校学生2016年秋季赴日本广..&nbsp;&nbsp;</A><SPAN>[2016-5-10]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="关于韩国南首尔大学2016年夏令营选拔的通知"href="other/show.asp?D_id=945" target=_blank>关于韩国南首尔大学2016年夏令营选拔的通知&nbsp;&nbsp;</A><SPAN>[2016-5-10]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="关于韩国极东大学2016年夏令营选拔的通知"href="other/show.asp?D_id=944" target=_blank>关于韩国极东大学2016年夏令营选拔的通知&nbsp;&nbsp;</A><SPAN>[2016-5-10]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="因公出国（境）公示2016年8号"href="other/show.asp?D_id=947" target=_blank>因公出国（境）公示2016年8号&nbsp;&nbsp;</A><SPAN>[2016-5-9]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="因公出国（境）公示2016年7号"href="other/show.asp?D_id=949" target=_blank>因公出国（境）公示2016年7号&nbsp;&nbsp;</A><SPAN>[2016-4-29]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="因公出国（境）公示2016年6号 "href="other/show.asp?D_id=943" target=_blank>因公出国（境）公示2016年6号 &nbsp;&nbsp;</A><SPAN>[2016-4-28]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="因公出国（境）公示2016年5号 "href="other/show.asp?D_id=942" target=_blank>因公出国（境）公示2016年5号 &nbsp;&nbsp;</A><SPAN>[2016-4-27]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="因公出国（境）公示2016年4号"href="other/show.asp?D_id=934" target=_blank>因公出国（境）公示2016年4号&nbsp;&nbsp;</A><SPAN>[2016-4-15]</SPAN></LI>
+  
+</UL></DIV></DIV></DIV></DIV>
+<DIV class=cols>
+<DIV class="mod mod-red">
+<DIV class=hd><A href="other/index_2.asp?cataid=A02010003">办事流程<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;更多&gt;&gt;</SPAN></A></DIV>
+<DIV class=bd>
+<DIV class=alist><A href="other/index_2.asp?cataid=A02010003"><IMG class="imgbox mt15" src="images/03.jpg" width=353 height=100> </A>
+<UL>
+   
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="办理因公赴台湾手续流程示意图"href="other/show.asp?D_id=809" target=_blank>办理因公赴台湾手续流程示意图&nbsp;&nbsp;</A><SPAN>[2015-6-19]</SPAN></LI>
+  
+  <LI><IMG src="images/tb01.gif">&nbsp;<A title="举办国际、双边及港澳台学术会议流程"href="other/show.asp?D_id=806" target=_blank>举办国际、双边及港澳台学术会议流程&nbsp;&nbsp;</A><SPAN>[2015-6-19]</SPAN></LI>
+  
+</UL></DIV></DIV></DIV></DIV>
+<!-- colm end -->
+<table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="780"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/tit01.jpg" width="780" height="40" /></td>
+      </tr>
+      <tr>
+        <td style="padding-top:10px;"><table width="97%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center"><a href="cooperation/index_1.asp?cataid=A018400030006" target="_blank"><img src="images/tb02.png" width="68" height="60" border="0" /></a></td>
+            <td>&nbsp;</td>
+            <td align="center"><a href="student/index_1.asp?cataid=A01850009" target="_blank"><img src="images/tb03.png" width="68" height="60" border="0" /></a></td>
+            <td>&nbsp;</td>
+            <td align="center"><a href="study/index_1.asp?cataid=A01950007" target="_blank"><img src="images/tb08.png" width="68" height="60" border="0" /></a></td>
+            <td>&nbsp;</td>
+            <td align="center"><a href="abroad/index_1.asp?cataid=A01960004" target="_blank"><img src="images/tb04.png" width="68" height="60" border="0" /></a></td>
+            <td>&nbsp;</td>
+            <td align="center"><a href="expert/index_1.asp?cataid=A01970005" target="_blank"><img src="images/tb06.png" width="68" height="60" border="0" /></a></td>
+            <td>&nbsp;</td>
+            <td align="center"><a href="gjxshy/index_1.asp?cataid=A01980004" target="_blank"><img src="images/tb07.png" width="68" height="60" border="0" /></a></td>
+            <td>&nbsp;</td>
+            <td align="center"><a href="hkm/index_1.asp?cataid=A01990005" target="_blank"><img src="images/tb08.jpg" width="68" height="60" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center">交流合作</td>
+            <td>&nbsp;</td>
+            <td align="center">留学生</td>
+            <td>&nbsp;</td>
+            <td align="center">学生海外学习</td>
+            <td>&nbsp;</td>
+            <td align="center">因公出国(境)</td>
+            <td>&nbsp;</td>
+            <td align="center">外专外教</td>
+            <td>&nbsp;</td>
+            <td align="center">国际学术会议</td>
+            <td>&nbsp;</td>
+            <td align="center">港澳台侨生</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+    <td width="300" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/tit02.jpg" width="300" height="40" /></td>
+      </tr>
+      <tr>
+        <td style="padding-top:10px;"><a href="agla/index.html" target="_blank"><img src="images/06.jpg" width="300" height="82" border="0" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+</DIV>
+
+<!-- grid end --></DIV></DIV><!-- content end -->
+<DIV id=link>
+<DIV class=w>
+<DIV class=link-box>
+<TABLE border=0 width=1120 height=50>
+  <TBODY>
+  <TR>
+  
+    <TD><A href="http://www.sau.edu.cn/" title="" target=_blank><IMG src="/UploadFile/20156417157255.jpg" height=39></A></TD>
+    
+    <TD><A href="http://www.moe.edu.cn/publicfiles/business/htmlfiles/moe/A20/index.html" title="" target=_blank><IMG src="/UploadFile/2015641700770.png" height=39></A></TD>
+    
+    <TD><A href="http://www.csc.edu.cn/" title="" target=_blank><IMG src="/UploadFile/20156416596936.png" height=39></A></TD>
+    
+    <TD><A href="http://www.lxbx.net/index.html" title="" target=_blank><IMG src="/UploadFile/201564165829715.png" height=39></A></TD>
+    
+    <TD><A href="http://hanban.edu.cn/" title="" target=_blank><IMG src="/UploadFile/201564165751497.png" height=39></A></TD>
+    
+    <TD><A href="http://www.mps.gov.cn/n16/n84147/index.html" title="" target=_blank><IMG src="/UploadFile/20156416570527.png" height=39></A></TD>
+    
+    <TD><A href="http://www.ceaie.edu.cn/index.html" title="" target=_blank><IMG src="/UploadFile/201564165616327.jpg" height=39></A></TD>
+    
+    <TD><A href="http://www.cafsa.org.cn/" title="" target=_blank><IMG src="/UploadFile/20156416554527.jpg" height=39></A></TD>
+    
+    </TR></TBODY></TABLE></DIV></DIV></DIV>
+    <!-- slider end -->
+<DIV id=footer>
+<DIV class=w>
+<DIV class="copyright fl">
+<TABLE width=1200>
+  <TBODY>
+  <TR>
+    <TD align=middle>Copyright © 2006 沈阳航空航天大学 国际教育学院（外事处） All rights reserved.
+<BR>
+中国沈阳市道义经济开发区道义南大街37号
+电话：86-24-89724878 技术支持：永信网络<BR>
+辽ICP备05021531号 </TD>
+  </TR></TBODY></TABLE></DIV></DIV></DIV><!-- footer end -->
+
+<SCRIPT language=javascript type=text/javascript src="js/jquery-1.11.0.min.js"></SCRIPT>
+<SCRIPT language=javascript type=text/javascript src="js/common.js"></SCRIPT>
+<SCRIPT language=javascript type=text/javascript src="js/jquery.SuperSlide.2.1.1.js"></SCRIPT>
+<SCRIPT language=javascript type=text/javascript src="js/lightbox.js"></SCRIPT>
+<SCRIPT>
+jQuery("#sliderBox").slide({mainCell:".bd ul",titCell:".hd li",effect:"leftLoop",autoPlay:true,interTime:5*1000});
+jQuery("#slideTabBox").slide({});
+jQuery("#objectList").slide({});
+
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>JS slides</title>
+   <meta charset="utf-8" />
+   <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<DIV id=header>
+<DIV class=w><A class=logo href="../index.asp">&nbsp;</A> 
+<DIV class=language>
+<A href="http://en.sau.edu.cn/index.asp">English</A> | <A href="http://kr.sau.edu.cn/">한국어</A></DIV>
+<DIV class=search>
+<form id="form1" name="form1" method="post" action="../other/search.asp">
+<INPUT class=button onClick="GoSearch('txtKeyword')" type=button><INPUT 
+onblur="txtFocus(this,'Search')" id=txtKeyword class=text 
+onfocus="txtFocus(this,'Search')" value=Search name=key>
+<SCRIPT type=text/javascript>
+    function txtFocus(key, value) {
+        if (key.value == value) {
+            key.value = "";
+        } else if (key.value == "") {
+            key.value = value;
+        }
+    }
+    function GoSearch(key) {
+        var txt = document.getElementById(key).value;
+        var url = "../other/search.asp";
+        if (txt != "" &&txt!="search") {
+            url += "?key=" + encodeURIComponent(txt);
+            window.location = url;
+        }
+        else {
+            return false;
+        }
+    }
+</SCRIPT>
+</form>
+ </DIV></DIV></DIV>
+ <!-- header end -->
+
+
+</body>
+</html>

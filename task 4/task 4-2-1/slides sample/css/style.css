@@ -1,0 +1,300 @@
+HTML {
+	BACKGROUND: #fff; COLOR: #484848
+}
+BODY {
+	PADDING-BOTTOM: 200px; FONT: 12px/1.5 "Microsoft Yahei",Arial,"????",Verdana,sans-serif
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+SELECT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse
+}
+INPUT {
+	OUTLINE-STYLE: none
+}
+BUTTON {
+	OUTLINE-STYLE: none
+}
+SELECT {
+	OUTLINE-STYLE: none
+}
+TEXTAREA {
+	OUTLINE-STYLE: none
+}
+IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+A {
+	COLOR: #484848; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #00669b; TEXT-DECORATION: none
+}
+.red {
+	COLOR: #00669b
+}
+.red:hover {
+	COLOR: #00669b
+}
+.song {
+	FONT-FAMILY: ????
+}
+.arial {
+	FONT-FAMILY: Arial
+}
+.verdana {
+	FONT-FAMILY: Verdana
+}
+.tahoma {
+	FONT-FAMILY: Tahoma
+}
+.yahei {
+	FONT-FAMILY: "Microsoft Yahei"
+}
+.heiti {
+	FONT-FAMILY: "Simhei"
+}
+.block {
+	DISPLAY: block
+}
+.imgbox {
+	DISPLAY: block
+}
+.none {
+	DISPLAY: none
+}
+.bold {
+	FONT-WEIGHT: 700
+}
+.normal {
+	FONT-WEIGHT: 400
+}
+.mt3 {
+	MARGIN-TOP: 3px
+}
+.mt5 {
+	MARGIN-TOP: 5px
+}
+.mt8 {
+	MARGIN-TOP: 8px
+}
+.mt10 {
+	MARGIN-TOP: 10px
+}
+.mt15 {
+	MARGIN-TOP: 15px
+}
+.mt20 {
+	MARGIN-TOP: 20px
+}
+.mb5 {
+	MARGIN-BOTTOM: 5px
+}
+.mb10 {
+	MARGIN-BOTTOM: 10px
+}
+.p10 {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.pb5 {
+	PADDING-BOTTOM: 5px
+}
+.pt10 {
+	PADDING-TOP: 10px
+}
+.fl {
+	DISPLAY: inline; FLOAT: left
+}
+.fr {
+	DISPLAY: inline; FLOAT: right
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+.fix {
+	ZOOM: 1
+}
+.w {
+	ZOOM: 1
+}
+.fix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: " "
+}
+.w:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: " "
+}
+.w {
+	MARGIN: 0px auto; WIDTH: 1120px
+}
+.w {
+	MARGIN: 0px auto; WIDTH: 1120px
+}
+
+#slider {
+	BORDER-BOTTOM: #b2b2b2 0px solid; POSITION: relative; MARGIN-TOP: 10px; BACKGROUND: #fff; HEIGHT: 400px
+}
+#slider-240 {
+	POSITION: relative; HEIGHT: 240px
+}
+#slider I {
+	Z-INDEX: 10; POSITION: absolute; FILTER: alpha(opacity=30); BACKGROUND: #000; HEIGHT: 34px; TOP: 366px; -moz-opacity: 0.3; opacity: 0.3
+}
+#slider-240 I {
+	Z-INDEX: 10; POSITION: absolute; FILTER: alpha(opacity=30); WIDTH: 100%; BACKGROUND: #000; HEIGHT: 34px; TOP: 366px; LEFT: 0px; -moz-opacity: 0.3; opacity: 0.3
+}
+#slider-240 {
+	HEIGHT: 250px
+}
+#slider-240 I {
+	TOP: 266px
+}
+
+
+.grid .cols {
+	MARGIN: 10px; WIDTH: 353px; FLOAT: left
+}
+.grid .colm {
+	WIDTH: 648px; FLOAT: right
+}
+.grid01 {
+	POSITION: relative; OVERFLOW: hidden
+}
+.grid01 .cols {
+	PADDING-BOTTOM: 32767px; WIDTH: 300px; MARGIN-BOTTOM: -32767px; BACKGROUND: #dedddb; FLOAT: left
+}
+.grid01 .colm {
+	PADDING-BOTTOM: 32767px; WIDTH: 760px; MARGIN-BOTTOM: -32767px; FLOAT: right;
+}
+.grid .cyxz{ MARGIN: 10px; WIDTH: 780px; FLOAT: left;}
+.grid .cyxz .tit{FLOAT: left;}
+.grid .cyxz .con{FLOAT: left; width:100%; margin-top:15px;}
+.grid .cyxz .con li{FLOAT: left; width:100%; margin-left:10px; margin-right:10px;}
+.grid .cyxz .con li A SPAN{ margin-left:10px; margin-right:10px; float:none; text-align:center; color:#999999; font-size:12px;}
+.grid02 .cols {
+	WIDTH: 300px; FLOAT: left
+}
+.grid02 .colm {
+	MARGIN: 0px 45px; WIDTH: 300px; DISPLAY: inline; FLOAT: left
+}
+.grid02 .cole {
+	WIDTH: 300px; FLOAT: right
+}
+.language {
+	TEXT-ALIGN: right; WIDTH: 400px; FLOAT: right; COLOR: #ffffff; PADDING-TOP: 30px
+}
+.language A {
+	COLOR: #ffffff
+}
+
+.slider-box {
+	POSITION: relative; WIDTH: 1120px; HEIGHT: 400px; OVERFLOW: hidden
+}
+.slider-box .hd {
+	Z-INDEX: 12; POSITION: absolute; TEXT-ALIGN: center; WIDTH: 1120px; TOP: 380px; CURSOR: pointer
+}
+.slider-box .hd UL LI {
+	WIDTH: 19px; ZOOM: 1; DISPLAY: inline; BACKGROUND: url(/images/slider_dot.png) no-repeat -22px 0px; HEIGHT: 19px
+}
+.slider-box .hd UL LI.on {
+	BACKGROUND-POSITION: -2px 0px
+}
+.slider-box .prev {
+	Z-INDEX: 10; POSITION: absolute; FILTER: alpha(opacity=50); MARGIN-TOP: -26px; WIDTH: 28px; DISPLAY: block; BACKGROUND: url(../images/slider_arrow.gif) no-repeat; HEIGHT: 53px; TOP: 50%; -moz-opacity: 0.5; opacity: 0.5
+}
+.slider-box .next {
+	Z-INDEX: 10; POSITION: absolute; FILTER: alpha(opacity=50); MARGIN-TOP: -26px; WIDTH: 28px; DISPLAY: block; BACKGROUND: url(../images/slider_arrow.gif) no-repeat; HEIGHT: 53px; TOP: 50%; -moz-opacity: 0.5; opacity: 0.5
+}
+.slider-box .prev {
+	LEFT: 20px
+}
+.slider-box .prev:hover {
+	FILTER: alpha(opacity=100); -moz-opacity: 1; opacity: 1
+}
+.slider-box .next {
+	BACKGROUND-POSITION: -84px 0px; RIGHT: 20px
+}
+.slider-box .next:hover {
+	FILTER: alpha(opacity=100); -moz-opacity: 1; opacity: 1
+}
+.slider-box-240 {
+	HEIGHT: 240px
+}
+.slider-box-240 .hd {
+	TOP: 214px
+}
