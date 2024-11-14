@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> first JavaScript</title>
+   <meta charset="utf-8" />
+
+</head>
+<body>
+
+<h1>JavaScript</h1>
+<p id="demo"> demo </p>
+<script>
+
+   x = sumAll(1, 123, 500, 115, 44, 88);
+   function sumAll() {
+      var i, sum = 0;
+      for (i = 0; i < arguments.length; i++) {
+         sum += arguments[i];
+      }
+      return sum;
+   }
+   document.getElementById("demo").innerHTML = x;
+
+   a = oddNum(1, 123, 500, 115, 44, 88);
+   function oddNum() {
+      let odd = 0;
+      for (let i = 0; i < arguments.length; i++) {
+         if (arguments[i]%2 === 1) {
+            odd += arguments[i];
+         }
+      }
+      return odd;
+   }
+   document.write("Odd Numbers: " + a + "<br>");
+
+   b = evenNum(1, 123, 500, 115, 44, 88);
+   function evenNum() {
+      let even = 0;
+      for (let i = 0; i < arguments.length; i++) {
+         if (arguments[i]%2 === 0) {
+            even += arguments[i];
+         }
+      }
+      return even;
+   }
+   document.write("<br>Even Numbers: " + b + "<br>");
+</script>
+
+</body>
+</html>

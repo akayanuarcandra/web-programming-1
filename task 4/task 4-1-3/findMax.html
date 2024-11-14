@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> first JavaScript</title>
+   <meta charset="utf-8" />
+
+</head>
+<body>
+
+<h1>JavaScrip </h1>
+<p id="demo"> demo </p>
+<script>
+
+
+   x = findMax(1, 123, 500, 115, 44, 3300,2300,88);
+   function findMax() {
+      var i;
+      var max = -Infinity;
+      for (i = 0; i < arguments.length; i++) {
+         if (arguments[i] > max) {
+            max = arguments[i];
+         }
+      }
+      return max;
+   }
+   document.getElementById("demo").innerHTML = x;
+
+   a = findMin(1, 123, 500, 115, 44, 3300,2300,88);
+   function findMin() {
+      let min = Infinity;
+      for (let i = 0; i < arguments.length; i++) {
+         if (arguments[i] < min) {
+            min = arguments[i];
+         }
+      }
+      return min;
+   }
+   document.write(a)
+</script>
+
+</body>
+</html>
