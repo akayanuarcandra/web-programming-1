@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>change image</title>
+<meta charset="utf-8" />
+<style>
+p{ text-align:center;
+}
+</style>
+<script>
+var i=0;
+function changeImage()
+{
+var photos=["photos/cathedral.jpg","photos/countryside.jpg","photos/lavender.jpg","photos/sienna.jpg","photos/sweets.jpg","photos/window.jpg"];
+var element=document.getElementById('myimage')
+if(i<5)
+  { i++;}
+ else
+  { i=0;}
+ element.src=photos[i];
+}
+
+</script>
+</head>
+
+<body>
+<p>
+<img id="myimage" src="photos/cathedral.jpg" width="375" height="500" />
+
+</P>
+<p>
+<img id="arrow" onclick="changeImage()" src="images/right-arrow.gif" width="50" height="50" />
+</p>
+</body>
+</html>

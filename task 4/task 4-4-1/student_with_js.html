@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+    <style>
+        h3 {
+            margin-bottom: -5px;
+        }
+    </style>
+</head>
+<body>
+</body>
+<script>
+    function Student(id, firstName, lastName, age, studentClass, GPA, major) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.studentClass = studentClass;
+        this.GPA = GPA;
+        this.major = major;
+        this.fullName = function () {
+            return this.firstName + " " + this.lastName;
+        }
+        this.birthdate = function () {
+            return new Date().getFullYear() - this.age;
+        }
+    }
+
+    let student1 = new Student(1, "Jane", "Doe", 20, "A", 3.5, "Computer Science");
+    let student2 = new Student(2, "Ellen", "Joe", 19, "B", 3.8, "Mathematics");
+    let student3 = new Student(3, "Alexandrina", "Sebastiane", 21, "C", 3.6, "Physics");
+
+    for (let i = 1; i <= 3; i++) {
+        let student = eval("student" + i);
+        document.write("<h3>Student " + i + "</h3><br>");
+        document.write("Full Name : " + student.fullName() + "<br>");
+        document.write("Student ID : " + student.id + "<br>");
+        document.write("Age : " + student.age + "<br>");
+        document.write("Class : " + student.studentClass + "<br>");
+        document.write("GPA : " + student.GPA + "<br>");
+        document.write("Major : " + student.major + "<br>");
+        document.write("Birthdate : " + student.birthdate() + "<br><br>");
+    }
+</script>
+</html>

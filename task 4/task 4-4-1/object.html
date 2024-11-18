@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> first JavaScript</title>
+    <meta charset="utf-8" />
+
+</head>
+<body>
+<p id="demo1">demo1</p>
+<p id="demo2">demo2</p>
+<p id="demo3">demo3</p>
+<script>
+
+    // var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    // document.getElementById("demo1").innerHTML = person.firstName+" "+person.lastName+
+    //     " "+person.age+" "+person.eyeColor;
+
+
+    // var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    // var txt="";
+    // for(x in person)
+    // {
+    //     txt += person[x];
+    //     txt +=" ";
+    //
+    // }
+    // document.getElementById("demo1").innerHTML = txt;
+
+     function Person (firstName,lastName,age,eyeColor)
+     {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.eyeColor = eyeColor;
+        this.fullName = function(){return this.firstName+" "+
+                                    this.lastName;}
+
+     }
+     var myFather = new Person("John","Doe",50,"blue");
+     var myMother = new Person("Sally","Rally",48,"green");
+     document.getElementById("demo1").innerHTML = myFather.firstName+" "+myFather.lastName+
+                                                    " "+myFather.age+" "+myFather.eyeColor;
+    document.getElementById("demo2").innerHTML = myMother.firstName+" "+myMother.lastName+
+                                                    " "+myMother.age+" "+myMother.eyeColor;
+     document.getElementById("demo3").innerHTML = myFather.fullName();
+</script>
+</body>
+</html>
