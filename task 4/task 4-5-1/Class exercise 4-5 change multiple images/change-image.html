@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>change image</title>
+ <meta charset="utf-8" />
+ <style>
+  div
+  {
+   text-align:center;
+   position:relative;
+  }
+  img#left {
+   position:absolute;
+   top:50%;
+   left:15%;
+  }
+  img#right {
+   position:absolute;
+   top:50%;
+   right:15%;
+  }
+ </style>
+ <script>
+  var i=0;
+  function changeToNextImage()
+  {
+   var photos=["photos/cathedral.jpg","photos/countryside.jpg","photos/lavender.jpg","photos/sienna.jpg","photos/sweets.jpg","photos/window.jpg"];
+   var element=document.getElementById('myimage')
+   if(i<5)
+   { i++;}
+   else
+   { i=0;}
+   element.src=photos[i];
+  }
+  function changeToPreviousImage()
+  {
+   var photos=["photos/cathedral.jpg","photos/countryside.jpg","photos/lavender.jpg","photos/sienna.jpg","photos/sweets.jpg","photos/window.jpg"];
+   var element=document.getElementById('myimage')
+   if(i>0)
+   { i--;}
+   else
+   { i=5;}
+   element.src=photos[i];
+  }
+ </script>
+</head>
+
+<body>
+<div>
+ <img id="left" onclick="changeToPreviousImage()" src="images/left-arrow.jpg" width="50" height="50" />
+ <img id="myimage" src="photos/cathedral.jpg" width="375" height="500" />
+ <img id="right" onclick="changeToNextImage()" src="images/right-arrow.jpg" width="50" height="50" />
+</div>
+
+</body>
+</html>
