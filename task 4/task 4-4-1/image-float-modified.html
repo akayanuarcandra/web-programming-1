@@ -2,24 +2,26 @@
 <head>
    <title> JavaScript Example </title>
    <meta charset="utf-8" />
-<script>
-  var position="left";
-  function test () {
-    x=document.getElementById("img1");
-	if(position=="left"){
-	    x.style.float ="right";
-		position = "right";
-		}
-	else{
-		x.style.float ="left";
-		position = "left";
-		}
-	//x.style.border ="1px solid blue";
-  }
-</script>
+   <script>
+      var position="left";
+      function test () {
+         x=document.getElementById("img1");
+         if(position=="left"){
+            x.style.float ="right";
+            x.style.border = "1px solid blue";
+            position = "right";
+         }
+         else{
+            x.style.float ="left";
+            x.style.border = "1px solid red";
+            position = "left";
+         }
+         // x.style.border ="1px solid blue";
+      }
+   </script>
 
 </head>
 <body>
-<img id="img1"src="images/click-me.jpg"  onclick="test()" />
+<img id="img1" src="images/click-me.jpg"  onclick="test()" />
 </body>
 </html>

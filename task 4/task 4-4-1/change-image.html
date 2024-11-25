@@ -2,35 +2,35 @@
 <html>
 <head>
  <title>change image</title>
-<meta charset="utf-8" />
-<style>
-p{ text-align:center;
-}
-</style>
-<script>
-function changeImage()
-{
-var element=document.getElementById('myimage')
-if (element.src.match("eg_tulip"))
-  {
-  element.src="images/shanghai_lupu_bridge.jpg";
+ <meta charset="utf-8" />
+ <style>
+  p{ text-align:center;
   }
-else
+ </style>
+ <script>
+  function changeImage()
   {
-  element.src="images/eg_tulip.jpg";
+   var element=document.getElementById('myimage')
+   if (element.src.match("eg_tulip"))
+   {
+    element.src="images/shanghai_lupu_bridge.jpg";
+   }
+   else
+   {
+    element.src="images/eg_tulip.jpg";
+   }
   }
-}
 
-</script>
+ </script>
 </head>
 
 <body>
 <p>
-<img id="myimage" src="images/eg_tulip.jpg" width="400" height="266" />
+ <img id="myimage" src="images/eg_tulip.jpg" width="400" height="266" />
 
 </P>
 <p>
-<img id="arrow" onclick="changeImage()" src="images/right-arrow.gif" width="50" height="50" />
+ <img id="arrow" onclick="changeImage()" src="images/right-arrow.gif" width="50" height="50" />
 </p>
 </body>
 </html>

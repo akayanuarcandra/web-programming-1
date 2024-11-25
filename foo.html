@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncing DVD Logo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        #dvd {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background: white no-repeat center center;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+<div id="dvd"></div>
+<script>
+    const dvd = document.getElementById('dvd');
+    let x = 0;
+    let y = 0;
+    let dx = 2;
+    let dy = 2;
+    const dvdWidth = 100;
+    const dvdHeight = 50;
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    function moveDVD() {
+        x += dx;
+        y += dy;
+
+        if (x + dvdWidth >= screenWidth || x <= 0) {
+            dx *= -5;
+        }
+        if (y + dvdHeight >= screenHeight || y <= 0) {
+            dy *= -5;
+        }
+
+        dvd.style.left = x + 'px';
+        dvd.style.top = y + 'px';
+
+        requestAnimationFrame(moveDVD);
+    }
+
+    moveDVD();
+</script>
+</body>
+</html>
