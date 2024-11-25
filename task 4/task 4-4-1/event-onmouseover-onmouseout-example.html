@@ -2,18 +2,25 @@
 <html>
 <body>
 
-<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:green;width:120px;height:20px;padding:40px;color:#ffffff;">Mouse over me</div>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+     style="background-color:green;width:120px;height:20px;padding:40px;color:#ffffff;">
+    Mouse over me
+</div>
 
 <script>
-function mOver(obj)
-{
-obj.innerHTML="Thanks"
-}
+    function mOver(obj)
+    {
+        obj.innerHTML="Thanks";
+        obj.style.color="blue";
+        obj.style.backgroundColor="white";
+    }
 
-function mOut(obj)
-{
-obj.innerHTML="Mouse over me"
-}
+    function mOut(obj)
+    {
+        obj.innerHTML="Mouse over me";
+        obj.style.color="white";
+        obj.style.backgroundColor="green";
+    }
 </script>
 
 </body>
