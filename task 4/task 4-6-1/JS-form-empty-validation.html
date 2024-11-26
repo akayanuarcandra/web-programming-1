@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>form</title>
+   <meta charset="utf-8" />
+   <script>
+      function validateForm() {
+         // var x = document.forms["myForm"]["fname"].value;
+         var x = document.myForm.fname.value;
+         if (x == null || x == "") {
+            document.getElementById("demo").innerHTML="Name must be filled out";
+            return false;
+         }
+      }
+   </script>
+</head>
+<body>
+
+<form name="myForm" action="do_form.jsp" onsubmit="return validateForm()" method="post">
+   Name: <input type="text" name="fname">
+   <input type="submit" value="Submit">
+</form>
+<p id="demo"></P>
+</body>
+</html>

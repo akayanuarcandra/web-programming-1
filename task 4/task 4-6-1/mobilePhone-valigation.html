@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>mobile phone number validation</title>
+ <meta charset="utf-8" />
+</head>
+<body>
+<p>Please enter mobile phone number:</p>
+<input type="text" id="id1"  name="phone-number">
+<button onclick="myFunction()">OK</button>
+<p id="demo"></p>
+<script>
+ function myFunction()
+ {
+  var x=document.getElementById("id1").value;
+  if(x==""||isNaN(x))
+  {
+   document.getElementById("demo").innerHTML="It is not a number";
+  }
+  else if(x.length!=11){
+   document.getElementById("demo").innerHTML="The length of phone number is not eleven";
+  }
+  else{
+   document.getElementById("demo").innerHTML="Correct mobile phone number.";
+  }
+ }
+</script>
+</body>
+</html>

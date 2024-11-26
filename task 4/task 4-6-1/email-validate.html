@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+        function validate_email()
+        {
+            var email = document.getElementById("email");
+            var value=email.value;
+            apos=value.indexOf("@");
+            dotpos=value.lastIndexOf(".");
+            if (apos<1||dotpos-apos<2)
+            {
+                document.getElementById("demo").innerHTML = "incorrect email";
+                return false;
+            }
+            else {
+                document.getElementById("demo").innerHTML = "correct email";
+                return true;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<form action="" onsubmit="return validate_email()" method="post">
+    Email: <input type="email" id="email" name="email" size="30" required>
+    <input type="submit" value="Submit">
+    <p id="demo"></p>
+</form>
+</body>
+</html>

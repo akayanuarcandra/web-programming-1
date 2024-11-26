@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Form</title>
+    <style>
+        :root {
+            --text: #000;
+            --bg: #e1e1e1;
+            --content: #fff;
+            --colscheme: light;
+            --border-color: #ccc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #fff;
+                --bg: #000;
+                --content: #151515;
+                --colscheme: dark;
+                --border-color: #333;
+            }
+        }
+
+        body {
+            font-family: "Product Sans", sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        label p {
+            color: var(--text);
+            margin: 0;
+        }
+
+        input {
+            color: var(--text);
+            margin-top: 2%;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text);
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        form {
+            background: var(--content);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: var(--content);
+            color-scheme: var(--colscheme);
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #48af77;
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .verification-container {
+            display: flex;
+            align-items: center;
+        }
+
+        canvas {
+            border: 1px solid var(--border-color);
+            margin-left: 10px;
+            margin-top: 2%;
+            border-radius: 10px;
+        }
+
+        .input-margin {
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+<form name="Form" onsubmit="return validateForm()" method="post">
+    <h1>Login</h1>
+    <label style="margin-bottom: 16px">
+        <div class="input-margin">
+            <p>Username
+                <input type="text" name="name">
+            </p>
+        </div>
+        <div class="input-margin">
+            <p>Password
+                <input type="password" name="password">
+            </p>
+        </div>
+        <div class="input-margin">
+            <p>Verification Code</p>
+            <div class="verification-container">
+                <input type="text" id="verificationCode">
+                <canvas id="verificationCanvas" width="120" height="30"></canvas>
+            </div>
+        </div>
+    </label>
+    <button type="submit" value="Submit">Login</button>
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const canvas = document.getElementById("verificationCanvas");
+        const ctx = canvas.getContext("2d");
+        const verificationCode = generateVerificationCode();
+        drawVerificationCode(ctx, verificationCode);
+
+        function generateVerificationCode() {
+            const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            let code = "";
+            for (let i = 0; i < 4; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                code += characters[randomIndex];
+            }
+            return code;
+        }
+
+        function drawVerificationCode(ctx, code) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < code.length; i++) {
+                const x = 20 + i * 20;
+                const y = 20 + Math.random() * 5;
+                const angle = Math.random() * Math.PI / 4 - Math.PI / 8;
+                ctx.save();
+                ctx.translate(x, y);
+                ctx.rotate(angle);
+                ctx.font = "24px Arial";
+                ctx.fillStyle = getRandomColor();
+                ctx.fillText(code[i], 0, 0);
+                ctx.restore();
+            }
+        }
+
+        function getRandomColor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            return `rgb(${r},${g},${b})`;
+        }
+
+        window.validateForm = function() {
+            const name = document.forms["Form"]["name"].value;
+            const password = document.forms["Form"]["password"].value;
+            const userCode = document.getElementById("verificationCode").value.toUpperCase();
+
+            if (name == null || name === "") {
+                alert("Please enter username!");
+                return false;
+            } else if (password == null || password === "") {
+                alert("Please enter password!");
+                return false;
+            } else if (userCode === "" || userCode !== verificationCode) {
+                alert("Invalid verification code!");
+                return false;
+            } else {
+                alert("Logged in successfully!");
+                return true;
+            }
+        };
+    });
+</script>
+</body>
+</html>

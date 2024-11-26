@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Email Validation</title>
+<meta charset="utf-8" />
+<script>
+function validate_email()
+{
+		var email = document.getElementById("email");
+		var value=email.value;
+		apos=value.indexOf("@");
+		dotpos=value.lastIndexOf(".");
+		if (apos<1||dotpos-apos<2) 
+		  {
+			  document.getElementById("demo").innerHTML = "incorrect email";
+			  return false;
+		  }
+		else {
+		    document.getElementById("demo").innerHTML = "correct email";
+			return true;
+		}
+
+}
+</script>
+</head>
+<body>
+<form action=""  method="post">
+<p>Email: <input type="text" id="email" name="email" size="30" onblur="return validate_email()" required></p>
+<input type="submit" value="Submit"> 
+<p id="demo"></p>
+</form>
+</body>
+</html>
