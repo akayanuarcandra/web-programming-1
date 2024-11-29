@@ -19,13 +19,17 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0);
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 5em;
         }
 
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(0, 0, 0, 0.8);
             border-radius: 5em;
+        }
+
+        :-webkit-any-link {
+            text-decoration: none;
         }
 
         html {
@@ -36,29 +40,26 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--primary-color);
             margin: 0;
+            line-height: 2em;
         }
 
         h1 {
             font-size: 5em;
             font-weight: 700;
-            margin-block: 0;
+            margin-block: 2rem;
+            inline-size: max-content;
         }
 
         h2 {
             font-size: 3em;
             font-weight: 700;
-            margin-block: 0;
+            margin-block: 2rem;
         }
 
         h3 {
             font-size: 2em;
             font-weight: 700;
             margin-block: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--text-color);
         }
 
         .navigation {
@@ -87,6 +88,7 @@
             font-size: 1em;
             font-weight: 700;
             width: auto;
+            inline-size: max-content;
         }
 
         .menus {
@@ -100,7 +102,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: var(--text-color);
             margin: 0 1em;
         }
 
@@ -118,6 +120,17 @@
             border-radius: 5em;
             font-weight: bold;
             color: var(--alt-text);
+            inline-size: max-content;
+        }
+
+        .subbutton {
+            display: inline-block;
+            background-color: var(--primary-color);
+            padding: .5em 1em;
+            border-radius: 5em;
+            font-weight: bold;
+            color: var(--text-color);
+            inline-size: max-content;
         }
 
         .darkbutton {
@@ -128,6 +141,7 @@
             border-radius: 5em;
             font-weight: bold;
             color: var(--primary-color);
+            inline-size: max-content;
         }
 
         .lightbutton {
@@ -139,6 +153,7 @@
             font-weight: bold;
             color: var(--text-color);
             width: auto;
+            inline-size: max-content;
         }
 
         .content {
@@ -164,6 +179,7 @@
             flex: 1;
             align-items: center;
             width: auto;
+            height: auto;
             margin-left: auto;
             color: var(--text-color);
         }
@@ -206,38 +222,59 @@
             width: 60%;
             margin-left: 5em;
         }
+
+        .about {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            margin: 10% 20%;
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            width: auto;
+            margin: 0;
+            padding: 5% 10%;
+            background-color: var(--text-color);
+            color: var(--alt-text);
+        }
+
+        .footer .column {
+            display: flex;
+            flex-direction: column;
+            margin: 0 5%;
+            color: var(--alt-text);
+        }
+
+        .footer .links {
+            color: var(--alt-text);
+            margin: 5% 0;
+        }
     </style>
 </head>
-<body>
+<body id="home">
 <div class="navigation">
     <a href="homepage.html">
         <div class="logo">
             <img src="./images/logo_dark.png" alt="Zusammen Tea Shop" style="width: 4em; margin-right: .5em">
-            <p>Zusammen Tea Shop</p>
+            Zusammen Tea Shop
         </div>
         <div class="menus">
-            <div class="navbutton">
-                <a href="homepage.html">Home</a>
-            </div>
-            <div class="navbutton">
-                <a href="#content">Product</a>
-            </div>
-            <div class="navbutton">
-                <a href="">About</a>
-            </div>
-            <div class="navbutton">
-                <a href="">Contact</a>
-            </div>
+            <a href="#home" class="navbutton">Home</a>
+            <a href="#content" class="navbutton">Product</a>
+            <a href="#about" class="navbutton">About</a>
+            <a href="#footer" class="navbutton">Contact</a>
         </div>
         <div class="account">
-            <div class="navbutton">
-                <a href="">Login</a>
-            </div>
-            <a href="">
-                <div class="mainbutton">
-                    Sign up
-                </div>
-            </a>
+            <a href="" class="navbutton">Login</a>
+            <a href="" class="mainbutton">Sign up</a>
         </div>
     </a>
 </div>
@@ -246,7 +283,7 @@
         <h1>Feel the Taste</h1>
         <p>A sip of tea could never go wrong</p>
         <a href="#content">
-            <div class="mainbutton" style="margin-top: 1em">
+            <div class="mainbutton">
                 Explore!
             </div>
         </a>
@@ -297,16 +334,48 @@
         <img src="images/hojicha.jpg" alt="Hojicha" style="width: 30%; height: 30em; overflow: hidden; object-fit: cover; margin-left: auto;">
     </div>
     <div class="product">
-        <img src="images/blubblub.jpg" alt="Whoops :O" style="width: 30%; height: 30em; overflow: hidden; object-fit: cover;">
+        <img src="images/jasmine.jpg" alt="Jasmine" style="width: 30%; height: 30em; overflow: hidden; object-fit: cover;">
+        <div class="text">
+            <h3>Jasmine Tea</h3>
+            <p>A combination of oolong and jasmine makes this floral Jasmine tea. It bears a sweet floral scent that is light on your palate - perfect for relaxing and winding down.</p>
+            <a href="">
+                <div class="lightbutton">
+                    More Detail
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="product_dark">
         <div class="text">
             <h3>And Many Others</h3>
             <p>There's still a lot more to explore, why not giving it a try?</p>
             <a href="">
-                <div class="mainbutton">
+                <div class="subbutton">
                     Try now!
                 </div>
             </a>
         </div>
+        <img src="images/blubblub.jpg" alt="Whoops :O" style="width: 30%; height: 30em; overflow: hidden; object-fit: cover; margin-left: auto;">
+    </div>
+</div>
+<br id="about">
+<div class="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias atque autem deleniti error eveniet fugiat id minus modi molestias necessitatibus, nobis quidem repellat rerum vero vitae? Deserunt dolorem non quae. Amet aperiam consequuntur delectus dicta eligendi est fugiat inventore libero recusandae. Ab accusantium, architecto aspernatur consequuntur in necessitatibus provident reiciendis totam velit. Commodi eius et ex expedita explicabo fugit nulla quos ratione, suscipit voluptatum. Amet atque dicta dolore ducimus eos et facere harum, id illo magnam obcaecati officiis optio quaerat sunt suscipit? Aliquid assumenda incidunt neque nihil repellat vel veniam voluptatibus? Culpa dolores error possimus repudiandae sint temporibus?</p>
+</div>
+<br id="contact">
+<div class="footer" id="footer">
+    <div class="column">
+        <h3>Socials</h3>
+        <a href="" class="links">zusammenthecompany@wohoo.com</a>
+        +62 81234567890 <br>
+        Soekarno Hatta Street 39 <br>
+        Lowokwaru, Malang City, <br>
+        East Java, Indonesia <br>
+        <a href="" class="links">See on maps &#8599;</a>
+    </div>
+    <div class="column">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dicta eum eveniet exercitationem fuga iste laborum nobis odit, omnis quas quasi quo quod ratione repellat. Accusantium ad, aliquam animi assumenda earum eligendi, in iste libero numquam, placeat qui quibusdam quis quisquam rem reprehenderit similique tempora. Eius laboriosam sit soluta!
     </div>
 </div>
 
