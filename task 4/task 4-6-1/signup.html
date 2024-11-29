@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Form</title>
+  <link rel="stylesheet" href="foo.css">
+</head>
+
+<body>
+<div class="compact">
+  <form name="Form" onsubmit="return validateForm()" method="post">
+    <div class="image">
+      <picture>
+        <source srcset="./images/night.jpg" media="(prefers-color-scheme: dark)">
+        <source srcset="./images/light.jpg" media="(prefers-color-scheme: light)">
+        <img src="./images/light.jpg" alt="">
+      </picture>
+    </div>
+    <div class="forme">
+      <h1>Sign Up</h1>
+      <label style="margin-bottom: 16px">
+        <div class="input-margin">
+          <p>Username
+            <input type="text" name="name">
+          </p>
+        </div>
+        <div class="input-margin">
+          <p>Password
+            <input type="password" name="password">
+          </p>
+        </div>
+        <div class="input-margin">
+          <p>Confirm Password
+            <input type="password" name="confirm_password">
+          </p>
+        </div>
+        <div class="input-margin">
+          <p>Mobile Phone
+            <input type="text" name="phone">
+          </p>
+        </div>
+        <div class="input-margin">
+          <p>Birthdate
+            <input type="date" name="birthdate">
+          </p>
+        </div>
+        <div class="input-margin">
+          <p>Email
+            <input type="email" name="email">
+          </p>
+        </div>
+      </label>
+      <button type="submit" value="Submit">Submit</button>
+      <button type="reset" value="Reset">Reset</button>
+    </div>
+  </form>
+</div>
+</body>
+
+<script>
+  function validateForm() {
+    const name = document.forms["Form"]["name"].value;
+    const password = document.forms["Form"]["password"].value;
+    const confirm_password = document.forms["Form"]["confirm_password"].value;
+    const phone = document.forms["Form"]["phone"].value;
+    const birthdate = document.forms["Form"]["birthdate"].value;
+    const email = document.forms["Form"]["email"].value;
+
+    if (password === "" || confirm_password === "" || phone === "" || birthdate === "" || email === "") {
+      alert("All fields must be filled out");
+      return false;
+    } else if (name == null || name === "") {
+      alert("Name must be filled out");
+      return false;
+    } else if (password.length < 8) {
+      alert("Password length must be larger than or equal to 8");
+      return false;
+    } else if (password !== confirm_password) {
+      alert("Password doesn't match");
+      return false;
+    } else if (phone.length !== 11) {
+      alert("Must be 11-digit phone number");
+      return false;
+    } else if (isNaN(phone)) {
+      alert("Phone must be numbers");
+      return false;
+    } else if (!validateEmail(email)) {
+      alert("Invalid email format");
+      return false;
+    } else {
+      alert("Signed up successfully!");
+      return true;
+    }
+  }
+
+  function validateEmail(email) {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+  }
+
+</script>
+</html>

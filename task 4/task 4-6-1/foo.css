@@ -4,6 +4,7 @@
     --content: #fff;
     --colscheme: light;
     --border-color: #ccc;
+    --form-image: url("./images/light.jpg");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
         --content: #151515;
         --colscheme: dark;
         --border-color: #333;
+        --form-image: url("./images/night.jpg");
     }
 }
 
@@ -46,10 +48,11 @@ h1 {
 
 form {
     background: var(--content);
-    padding: 30px;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: auto;
+    height: auto;
 }
 
 label {
@@ -73,7 +76,7 @@ button[type="submit"] {
     border: none;
     background-color: #48af77;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
     font-family: "Product Sans", sans-serif;
@@ -85,7 +88,7 @@ button[type="reset"] {
     border: none;
     color: #c53737;
     margin-top: 5%;
-    font-size: 10px;
+    font-size: 14px;
     font-family: "Product Sans", sans-serif;
 }
 
@@ -103,4 +106,32 @@ canvas {
 
 .input-margin {
     margin-top: 5%;
+}
+
+.compact {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+}
+
+.image {
+    display: flex;
+    height: 750px;
+    width: 500px;
+    overflow: hidden;
+    float: left;
+    border-radius: 14px;
+    position: relative;
+}
+
+.forme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+    margin: 0 50px;
+    top: 10%;
+    position: relative;
 }
