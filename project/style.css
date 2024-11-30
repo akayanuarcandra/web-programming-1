@@ -211,6 +211,7 @@ h3 {
 }
 
 button[type=submit] {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     display: inline-block;
     background-color: var(--text-color);
     padding: .65em 1em;
