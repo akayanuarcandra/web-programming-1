@@ -15,7 +15,6 @@
 
         ::-webkit-scrollbar {
             width: 10px;
-            scroll-margin: 5em;
         }
 
         ::-webkit-scrollbar-thumb {
@@ -32,8 +31,85 @@
             text-decoration: none;
         }
 
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-in-left {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-in-right {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .product {
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .product_dark {
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .product.animate-on-scroll:nth-child(even) {
+            animation: slide-in-right 1s forwards;
+        }
+
+        .product.animate-on-scroll:nth-child(odd) {
+            animation: slide-in-left 1s forwards;
+        }
+
+        .product_dark.animate-on-scroll:nth-child(even) {
+            animation: slide-in-right 1s forwards;
+        }
+
+        .product_dark.animate-on-scroll:nth-child(odd) {
+            animation: slide-in-left 1s forwards;
+        }
+
+        .content .title {
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .content .title.animate-on-scroll {
+            animation: slide-in 1s forwards;
+        }
+
+        .background {
+            opacity: 0;
+        }
+
+        .background.animate-on-scroll {
+            animation: slide-in 1s forwards;
+        }
+
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth !important;
         }
 
         body {
@@ -41,6 +117,7 @@
             background-color: var(--primary-color);
             margin: 0;
             line-height: 2em;
+            overflow-x: hidden;
         }
 
         h1 {
@@ -294,7 +371,7 @@
 </div>
 <br id="content">
 <div class="content">
-    <div style="margin: 3em">
+    <div class="title" style="margin: 3em">
         <h2>Our Products</h2>
     </div>
     <div class="product_dark">
@@ -380,6 +457,10 @@
 </div>
 
 <script>
+    window.onload = function() {
+        window.scrollTo(0, 0);
+    };
+
     window.addEventListener("scroll", (event) => {
         let scroll = this.scrollY;
         if (scroll > 1300) {
@@ -387,6 +468,23 @@
         } else {
             document.querySelector(".navigation").classList.remove("shadow");
         }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        const productContainers = document.querySelectorAll('.product, .product_dark, .content .title, .background');
+        productContainers.forEach(container => {
+            observer.observe(container);
+        });
     });
 </script>
 </body>
