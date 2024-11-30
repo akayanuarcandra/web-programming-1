@@ -5,7 +5,7 @@
     --primary-color: #e7c6a3;
     --text-color: #130a00;
     --alt-text: whitesmoke;
-    --form-border: rgba(19, 10, 0, 0.5);
+    --form-border: rgba(231, 198, 163, 0.5);
 }
 
 ::-webkit-scrollbar {
@@ -83,9 +83,25 @@ h1 {
     overflow-wrap: break-word;
 }
 
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-block: 2rem;
+    inline-size: max-content;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 @media (max-width: 1500px) {
     h1 {
         font-size: 4em;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 2.5em;
         margin-bottom: 0;
     }
 }
@@ -95,6 +111,11 @@ h1 {
         font-size: 3em;
         margin-bottom: 0;
     }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 900px) {
@@ -102,18 +123,24 @@ h1 {
         font-size: 2em;
         margin-bottom: 0;
     }
-}
 
-h2 {
-    font-size: 3em;
-    font-weight: 700;
-    margin-block: 2rem;
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
 }
 
 h3 {
     font-size: 2em;
     font-weight: 700;
     margin-block: 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-block: 0;
+    margin-top: .75em;
 }
 
 .navigation {
@@ -213,11 +240,11 @@ h3 {
 button[type=submit] {
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: inline-block;
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
     padding: .65em 1em;
     border-radius: 5em;
     font-weight: bold;
-    color: var(--alt-text);
+    color: var(--text-color);
     inline-size: max-content;
     font-size: 1em;
     width: auto;
@@ -254,10 +281,18 @@ button[type=submit] {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: var(--alt-text);
     margin: 0;
 }
 
 .input-margin {
     margin: .25em 0;
+}
+
+.myaccount {
+    display: flex;
+    align-items: center;
+    width: 2em;
+    border-radius: 500em;
+    margin-left: auto;
 }

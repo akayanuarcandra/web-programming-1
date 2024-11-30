@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zusammen Tea Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/icon.png">
+    <style>
+        .title {
+            text-align: center;
+        }
+
+        .lists {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 5em 10em;
+        }
+
+        .product {
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid var(--text-color);
+            border-radius: 2em;
+            width: 20em;
+            background-color: var(--text-color);
+            color: var(--alt-text);
+        }
+
+        .image {
+            width: 20em;
+            height: 20em;
+            overflow: hidden;
+            object-fit: cover;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+<body id="home">
+<div class="navigation">
+    <a href="homepage.html">
+        <div class="logo">
+            <img src="./images/logo_dark.png" alt="Zusammen Tea Shop" style="width: 4em; margin-right: .5em">
+            Zusammen Tea Shop
+        </div>
+        <div class="menus">
+            <a href="#home" class="navbutton">Home</a>
+            <a href="about.html" class="navbutton">About</a>
+            <a href="#footer" class="navbutton">Contact</a>
+        </div>
+        <a href="index.html" class="myaccount">
+            <img src="./images/pfp.png" alt="account" class="myaccount">
+        </a>
+    </a>
+</div>
+<div class="content">
+    <div class="title" style="margin: 3em">
+        <h2>What Would You Like to Drink Today?</h2>
+    </div>
+    <div class="lists">
+        <div class="product">
+            <img src="./images/matcha.jpg" alt="Matcha Tea" class="image">
+            <h4>Matcha Tea</h4>
+            <p>Japanese green tea powder made from finely powdered dried tea leaves.</p>
+            <p>￥10</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="./images/black-tea.jpg" alt="Black Tea" class="image">
+            <h4>Black Tea</h4>
+            <p>Rich in antioxidants and may provide health benefits.</p>
+            <p>￥15</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="./images/onion.png" alt="Onion Tea" class="image">
+            <h4>Onion Tea</h4>
+            <p>It’s an immunity boosting drink that can be made in a few minutes.</p>
+            <p>￥12</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="./images/jasmine.jpg" alt="Jasmine Tea" class="image">
+            <h4>Jasmine Tea</h4>
+            <p>A combination of oolong and jasmine makes this floral Jasmine tea.</p>
+            <p>￥8</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="./images/hojicha.jpg" alt="Hojicha" class="image">
+            <h4>Hojicha</h4>
+            <p>Notes of nori seaweed, roasted hazelnut and delicate smoke.</p>
+            <p>￥11</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="./images/thai.jpg" alt="Thai Tea" class="image">
+            <h4>Thai Tea</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum?</p>
+            <p>￥10</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="./images/lemon.jpg" alt="Lemon Tea" class="image">
+            <h4>Lemon Tea</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum?</p>
+            <p>￥9</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="images/milk.jpg" alt="Milk Tea" class="image">
+            <h4>Milk Tea</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum?</p>
+            <p>￥9</p>
+            <a href="" class="subbutton">Order Now</a>
+        </div>
+    </div>
+</div>
+<br id="contact">
+<div class="footer" id="footer">
+    <div class="column">
+        <h3>Socials</h3>
+        <a href="" class="links">zusammenthecompany@wohoo.com</a>
+        +62 81234567890 <br>
+        Soekarno Hatta Street 39 <br>
+        Lowokwaru, Malang City, <br>
+        East Java, Indonesia <br>
+        <a href="" class="links">See on maps &#8599;</a>
+    </div>
+    <div class="column">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dicta eum eveniet exercitationem fuga iste laborum nobis odit, omnis quas quasi quo quod ratione repellat. Accusantium ad, aliquam animi assumenda earum eligendi, in iste libero numquam, placeat qui quibusdam quis quisquam rem reprehenderit similique tempora. Eius laboriosam sit soluta!
+    </div>
+</div>
+<script>
+    window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if (scroll > 100) {
+            document.querySelector(".navigation").classList.add("shadow");
+        } else {
+            document.querySelector(".navigation").classList.remove("shadow");
+        }
+    });
+</script>
+</body>
+</html>

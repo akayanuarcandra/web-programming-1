@@ -25,7 +25,7 @@
             <h3>Login</h3>
         </div>
         <div class="text">
-            <form name="Form" onsubmit="return validateForm()" method="post">
+            <form name="Form" onsubmit="return validateForm()" method="post" action="homepage.html">
                 <div class="input-margin">
                     <label for="name">Username</label>
                     <input type="text" id="name" name="name" required>
@@ -107,8 +107,6 @@
                 alert("Invalid verification code!");
                 return false;
             } else {
-                alert("Logged in successfully!");
-                window.location.href = "index.html";
                 return true;
             }
         };
