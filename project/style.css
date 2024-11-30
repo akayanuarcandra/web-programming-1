@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --background-color: #FFF5F5;
+    --primary-color: #e7c6a3;
+    --text-color: #130a00;
+    --alt-text: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5em;
+}
+
+:-webkit-any-link {
+    text-decoration: none;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--primary-color);
+    margin: 0;
+    line-height: 2em;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+    margin-block: 2rem;
+    inline-size: max-content;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1500px) {
+    h1 {
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-block: 2rem;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-block: 0;
+}
+
+.navigation {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    width: auto;
+    height: 2em;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 14px 12px -6px rgba(0, 0, 0, 5%);
+    -moz-box-shadow: 0 14px 12px -6px rgba(0, 0, 0, 5%);
+    box-shadow: 0 14px 12px -6px rgba(0, 0, 0, 5%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: 700;
+    width: auto;
+    inline-size: max-content;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+    width: auto;
+}
+
+.navbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    margin: 0 1em;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+}
+
+.mainbutton {
+    display: inline-block;
+    background-color: var(--text-color);
+    padding: .5em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    color: var(--alt-text);
+    inline-size: max-content;
+}
+
+.subbutton {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: .5em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    color: var(--text-color);
+    inline-size: max-content;
+}
+
+.darkbutton {
+    display: inline-block;
+    background-color: var(--text-color);
+    border: 0.1em solid var(--primary-color);
+    padding: .5em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    inline-size: max-content;
+}
+
+.lightbutton {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border: 0.1em solid var(--text-color);
+    padding: .5em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    color: var(--text-color);
+    width: auto;
+    inline-size: max-content;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    padding: 5% 10%;
+    background-color: var(--text-color);
+    color: var(--alt-text);
+}
+
+.footer .column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    color: var(--alt-text);
+}
+
+.footer .links {
+    color: var(--alt-text);
+    margin: 5% 0;
+}
