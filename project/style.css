@@ -5,6 +5,7 @@
     --primary-color: #e7c6a3;
     --text-color: #130a00;
     --alt-text: whitesmoke;
+    --form-border: rgba(19, 10, 0, 0.5);
 }
 
 ::-webkit-scrollbar {
@@ -209,6 +210,19 @@ h3 {
     inline-size: max-content;
 }
 
+button[type=submit] {
+    display: inline-block;
+    background-color: var(--text-color);
+    padding: .65em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    color: var(--alt-text);
+    inline-size: max-content;
+    font-size: 1em;
+    width: auto;
+    text-align: center;
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -230,5 +244,19 @@ h3 {
 
 .footer .links {
     color: var(--alt-text);
+    justify-content: left;
+    text-align: left;
     margin: 5% 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.input-margin {
+    margin: .25em 0;
 }
