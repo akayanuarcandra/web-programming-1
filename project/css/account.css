@@ -73,3 +73,10 @@ canvas {
     padding: .32em;
     border-radius: 1em;
 }
+
+.image img {
+    width: 100em;
+    height: 47.5em;
+    overflow: hidden;
+    object-fit: cover;
+}

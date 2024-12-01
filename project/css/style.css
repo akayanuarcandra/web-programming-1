@@ -94,7 +94,7 @@ h2 {
     font-weight: 700;
     margin-block: 2rem;
     inline-size: max-content;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
