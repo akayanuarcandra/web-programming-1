@@ -67,12 +67,12 @@
 
 input[type="number"] {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    width: 1.5em;
+    width: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: var(--text-color);
+    background-color: transparent;
     color: var(--alt-text);
     font-size: 1em;
 }
