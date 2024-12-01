@@ -53,6 +53,7 @@ body {
 }
 
 .form input {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     height: 1em;
     width: 20em;
     padding: 1em;
