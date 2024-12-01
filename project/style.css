@@ -26,6 +26,12 @@
     text-decoration: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 @keyframes slide-in {
     from {
         opacity: 0;
@@ -179,19 +185,19 @@ h4 {
     width: auto;
 }
 
+.account {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+}
+
 .navbutton {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
     margin: 0 1em;
-}
-
-.account {
-    display: flex;
-    align-items: center;
-    width: auto;
-    margin-left: auto;
 }
 
 .mainbutton {
@@ -202,6 +208,9 @@ h4 {
     font-weight: bold;
     color: var(--alt-text);
     inline-size: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .subbutton {
@@ -212,6 +221,9 @@ h4 {
     font-weight: bold;
     color: var(--text-color);
     inline-size: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .darkbutton {
@@ -223,6 +235,9 @@ h4 {
     font-weight: bold;
     color: var(--primary-color);
     inline-size: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .lightbutton {
@@ -234,6 +249,19 @@ h4 {
     font-weight: bold;
     color: var(--text-color);
     width: auto;
+    inline-size: max-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.backbutton {
+    display: inline-block;
+    font-weight: bold;
+    background-color: var(--text-color);
+    padding: .5em 1em;
+    border-radius: 5em;
+    color: var(--alt-text);
     inline-size: max-content;
 }
 

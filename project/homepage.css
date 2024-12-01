@@ -1,0 +1,29 @@
+.title {
+    text-align: center;
+}
+
+.lists {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5em 10em;
+}
+
+.product {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid var(--text-color);
+    border-radius: 2em;
+    width: 20em;
+    background-color: var(--text-color);
+    color: var(--alt-text);
+}
+
+.image {
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 1em;
+}
