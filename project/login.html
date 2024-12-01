@@ -16,38 +16,41 @@
         </div>
     </a>
 </div>
-<div class="content">
+<div class="container">
     <div class="image">
         <img src="images/login.jpg" alt="Hello ;)" style="width: 100em; height: 47.5em; overflow: hidden; object-fit: cover;">
     </div>
     <div class="form">
-        <div class="title" style="margin: 2em 3em; text-align: center">
-            <h3>Welcome Back!</h3>
-        </div>
-        <div class="text">
-            <form name="Form" onsubmit="return validateForm()" method="post" action="homepage.html">
-                <div class="input-margin">
-                    <label for="name">Username</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="input-margin">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="input-margin">
-                    <label for="verificationCode">Verification Code</label>
-                    <div class="verification-container">
-                        <input type="text" style="width: 120px" id="verificationCode">
-                        <canvas id="verificationCanvas" width="120" height="30"></canvas>
+        <a href="homepage.html" class="backbutton" style="margin-bottom: 3em">＜</a>
+        <div class="content">
+            <div class="title" style="margin: 2em 0; text-align: center">
+                <h3>Welcome Back!</h3>
+            </div>
+            <div class="text">
+                <form name="Form" onsubmit="return validateForm()" method="post" action="homepage.html">
+                    <div class="input-margin">
+                        <label for="name">Username</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
-                <button type="submit" style="margin-top: 5em;">
-                    Login
-                </button>
-            </form>
-            <a href="signup.html" class="links" style="font-size: .75em; margin-top: .5em">
-                Don't have an account?
-            </a>
+                    <div class="input-margin">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-margin">
+                        <label for="verificationCode">Verification Code</label>
+                        <div class="verification-container">
+                            <input type="text" style="width: 120px" id="verificationCode">
+                            <canvas id="verificationCanvas" width="120" height="30"></canvas>
+                        </div>
+                    </div>
+                    <button type="submit" style="margin-top: 5em;">
+                        Login
+                    </button>
+                </form>
+                <a href="signup.html" class="links" style="font-size: .75em; margin-top: .5em">
+                    Don't have an account?
+                </a>
+            </div>
         </div>
     </div>
 </div>

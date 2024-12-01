@@ -4,10 +4,16 @@
 
 .lists {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 5em 10em;
+}
+
+@media (max-width: 1500px) {
+    .lists {
+        margin: 5em 5em;
+    }
 }
 
 .product {

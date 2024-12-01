@@ -257,12 +257,13 @@ h4 {
 
 .backbutton {
     display: inline-block;
-    font-weight: bold;
-    background-color: var(--text-color);
-    padding: .5em 1em;
+    font-weight: 700;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 0 .5em;
     border-radius: 5em;
-    color: var(--alt-text);
     inline-size: max-content;
+    margin: 1em 0;
 }
 
 button[type=submit] {

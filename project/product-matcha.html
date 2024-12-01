@@ -4,79 +4,8 @@
     <meta charset="UTF-8">
     <title>Zusammen Tea Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="icon" href="./images/icon.png">
-    <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            margin: 5em 25em;
-            padding: 1em;
-            width: auto;
-            border-radius: 1.5em;
-            background-color: var(--text-color);
-            color: var(--alt-text);
-            align-items: flex-start;
-            justify-content: left;
-        }
-
-        @media (max-width: 1800px) {
-            .container {
-                margin: 5em 20em;
-            }
-        }
-
-        @media (max-width: 1500px) {
-            .container {
-                margin: 5em 15em;
-            }
-        }
-
-        @media (max-width: 1200px) {
-            .container {
-                margin: 5em 10em;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            .container {
-                margin: 5em 5em;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .container {
-                margin: 5em 2.5em;
-            }
-        }
-
-        .image {
-            width: 40em;
-            height: 40em;
-            overflow: hidden;
-            object-fit: cover;
-            border-radius: 1em;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            margin: 0 1em;
-            padding: 0 1em;
-            width: 20em;
-        }
-
-        input[type="number"] {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            width: 1em;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            background-color: var(--text-color);
-            color: var(--alt-text);
-            font-size: 1em;
-        }
-    </style>
 </head>
 <body id="home">
 <div class="navigation">
@@ -97,17 +26,18 @@
 </div>
 <div class="container">
     <div class="image">
-        <a href="homepage.html" class="backbutton" style="position: absolute; margin: 1em">＜</a>
         <img src="./images/matcha.jpg" alt="Matcha Tea" class="image">
     </div>
     <div class="content">
+        <a href="homepage.html" class="backbutton">＜</a>
         <div class="item">
             <div class="text">
                 <h4>Matcha Tea</h4>
                 <p>Japanese green tea powder made from finely powdered dried tea leaves. It has a slightly bitter, vegetal taste and a vibrant green color.</p>
-                <p>￥10</p>
+                <label for="price">￥</label>
+                <input type="number" id="price" value="10" readonly style="width: auto; text-align: left">
             </div>
-            <div class="order-section">
+            <div class="order-section" style="margin-top: 1em">
                 <div class="order-number">
                     <button class="subbutton" onclick="decrement()">-</button>
                     <label for="order-quantity"></label>
@@ -116,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <a href="" class="subbutton" style="width: auto; margin-top: 1em;">Order Now</a>
+        <button type="submit" onclick="order()" style="margin-top: auto; width: auto;">Order Now</button>
     </div>
 </div>
 <br id="contact">
@@ -134,29 +64,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dicta eum eveniet exercitationem fuga iste laborum nobis odit, omnis quas quasi quo quod ratione repellat. Accusantium ad, aliquam animi assumenda earum eligendi, in iste libero numquam, placeat qui quibusdam quis quisquam rem reprehenderit similique tempora. Eius laboriosam sit soluta!
     </div>
 </div>
-<script>
-    window.addEventListener("scroll", (event) => {
-        let scroll = this.scrollY;
-        if (scroll > 100) {
-            document.querySelector(".navigation").classList.add("shadow");
-        } else {
-            document.querySelector(".navigation").classList.remove("shadow");
-        }
-    });
-
-    function increment() {
-        let quantity = document.getElementById("order-quantity");
-        if (quantity.value < 10) {
-            quantity.value = parseInt(quantity.value) + 1;
-        }
-    }
-
-    function decrement() {
-        let quantity = document.getElementById("order-quantity");
-        if (quantity.value > 1) {
-            quantity.value = parseInt(quantity.value) - 1;
-        }
-    }
-</script>
+<script src="main-navbar.js"></script>
+<script src="product-order.js"></script>
 </body>
 </html>
