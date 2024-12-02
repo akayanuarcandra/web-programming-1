@@ -1,35 +1,97 @@
+.content {
+    margin: 0 10em;
+}
+
 .title {
     text-align: center;
 }
 
+.subtitle {
+    text-align: left;
+    margin: 1em 0 1em 2em;
+}
+
 .lists {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+    grid-auto-rows: minmax(24em, auto);
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5em 10em;
 }
 
 @media (max-width: 1500px) {
-    .lists {
-        margin: 5em 5em;
+    .content {
+        margin: 0 5em;
     }
 }
 
 .product {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 20em;
     margin: 1em;
     padding: 1em;
     border: 1px solid var(--text-color);
     border-radius: 2em;
-    width: 20em;
+    width: auto;
+    height: 35em; /* Set a consistent height */
     background-color: var(--text-color);
     color: var(--alt-text);
 }
 
 .image {
-    width: 20em;
-    height: 20em;
+    width: 100%;
+    height: 15em;
     overflow: hidden;
     object-fit: cover;
     border-radius: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 0.5em;
+    text-align: center;
+}
+
+table th {
+    border-bottom: var(--text-color) solid 1px;
+}
+
+table td {
+    border-bottom: var(--border-color) solid 1px;
+}
+
+table th,
+table td {
+    width: 15%;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: auto;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 70%;
+    text-align: left;
+}
+table th:nth-child(5),
+table td:nth-child(5) {
+    width: auto;
+}
+
+.table-image {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 1em;
+    margin: 1em;
+    vertical-align: middle;
 }

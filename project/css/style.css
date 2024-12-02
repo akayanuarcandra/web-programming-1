@@ -6,6 +6,7 @@
     --text-color: #130a00;
     --alt-text: whitesmoke;
     --form-border: rgba(231, 198, 163, 0.5);
+    --border-color: rgba(19, 10, 0, 0.5);
 }
 
 ::-webkit-scrollbar {
@@ -224,6 +225,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: auto;
 }
 
 .darkbutton {

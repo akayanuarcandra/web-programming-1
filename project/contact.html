@@ -11,7 +11,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 10em 10em;
+            margin: 8em 10em;
+            background: var(--text-color);
+            height: 40em;
+            width: auto;
+            border-radius: 2em;
+            color: var(--alt-text);
         }
 
         .content {
@@ -19,14 +24,21 @@
             flex-direction: row;
             align-items: flex-start;
             width: auto;
-            margin: 2em;
+            margin: 2em auto;
+            color: var(--alt-text);
         }
 
         .map {
             margin-left: 5em;
             border-radius: 1em;
-            border: 1px var(--text-color) solid;
+            border: 1px var(--primary-color) solid;
             overflow: hidden;
+        }
+
+        .links {
+            margin: 1em 0;
+            color: var(--alt-text);
+            justify-content: left
         }
     </style>
 </head>
@@ -51,12 +63,12 @@
     <h2>Contact Us!</h2>
     <div class="content">
         <div class="column">
-            <a href="" class="links" style="margin-bottom: 1em; color: var(--text-color); justify-content: left">zusammenthecompany@wohoo.com</a>
+            <a href="" class="links">zusammenthecompany@wohoo.com</a>
             +62 81234567890 <br>
             Soekarno Hatta Street 39 <br>
             Lowokwaru, Malang City, <br>
             East Java, Indonesia <br>
-            <a href="" class="links" style="margin: 1em 0; color: var(--text-color); justify-content: left">See on maps &#8599;</a>
+            <a href="https://www.google.com/maps?ll=-7.943568,112.62017&z=20&t=m&hl=en&gl=SG&mapclient=embed&cid=14002736345309626588" class="links">See on maps &#8599;</a>
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.97092416878164!2d112.62012651539865!3d-7.943555916688173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629df87d0f97f%3A0xc253b68431a1c0dc!2sIndomaret%20Soekarno%20Hatta%203!5e0!3m2!1sen!2ssg!4v1733067138685!5m2!1sen!2ssg" width="400" height="300" style="display: block; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
