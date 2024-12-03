@@ -67,10 +67,6 @@ input::-webkit-inner-spin-button {
     }
 }
 
-html {
-    scroll-behavior: smooth !important;
-}
-
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--primary-color);
@@ -178,6 +174,11 @@ h4 {
     font-weight: 700;
     width: auto;
     inline-size: max-content;
+}
+
+.logo img {
+    width: 4em;
+    margin-right: .5em;
 }
 
 .menus {

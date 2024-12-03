@@ -118,7 +118,14 @@
     text-align: center;
 }
 
-img {
+.product_dark img {
+    width: 30%;
+    height: 30em;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.product img {
     width: 30%;
     height: 30em;
     overflow: hidden;
